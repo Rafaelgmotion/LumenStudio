@@ -2,15 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>LumenStudio | Sites Profissionais + Tráfego Pago Meta Ads</title>
+  <title>LumenStudio | Sites Profissionais + Marketing Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LumenStudio cria sites rápidos e profissionais para comércios locais. Sites leves, otimizados para Google, com gestão de Meta Ads. Atendimento direto pelo WhatsApp.">
-  <meta name="keywords" content="sites para comércio, site profissional, meta ads, facebook ads, tráfego pago, site rápido, site barato, gestor de tráfego, LumenStudio">
+  <meta name="description" content="LumenStudio cria sites rápidos e profissionais para comércios locais. Sites otimizados para Google e com gestão de Meta Ads. Atendimento direto pelo WhatsApp.">
+  <meta name="keywords" content="sites para comércio, site profissional, meta ads, facebook ads, google ads, tráfego pago, site rápido, site barato, LumenStudio">
   <meta name="Rafael Garcia" content="LumenStudio">
   
   <!-- Open Graph para redes sociais -->
-  <meta property="og:title" content="LumenStudio - Sites + Tráfego Pago Meta Ads">
-  <meta property="og:description" content="Sites profissionais + gestão de Meta Ads para alavancar seu negócio local. Resultados reais em 30 dias.">
+  <meta property="og:title" content="LumenStudio - Sites + Marketing Digital">
+  <meta property="og:description" content="Sites profissionais + gestão de tráfego pago para alavancar seu negócio local. Resultados reais em 30 dias.">
   <meta property="og:type" content="website">
   
   <!-- Ícones -->
@@ -36,8 +36,8 @@
     
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: #f1f5f9;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      color: #334155;
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
@@ -47,14 +47,14 @@
     }
     
     .gradient-text {
-      background: linear-gradient(90deg, #f5bc02, #f59e0b);
+      background: linear-gradient(90deg, #d97706, #f59e0b);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
     
     .gradient-bg-yellow {
-      background: linear-gradient(135deg, #f5bc02 0%, #f59e0b 100%);
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
     }
     
     .gradient-bg-blue {
@@ -65,15 +65,24 @@
       background: linear-gradient(135deg, #0084ff 0%, #0066cc 100%);
     }
     
+    .gradient-bg-google {
+      background: linear-gradient(135deg, #4285f4 0%, #34a853 33%, #fbbc05 66%, #ea4335 100%);
+    }
+    
+    .gradient-bg-premium {
+      background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    }
+    
     .card-hover {
       transition: all 0.3s ease;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid #e2e8f0;
+      background: white;
     }
     
     .card-hover:hover {
       transform: translateY(-8px);
-      border-color: #f5bc02;
-      box-shadow: 0 20px 40px rgba(245, 188, 2, 0.1);
+      border-color: #f59e0b;
+      box-shadow: 0 20px 40px rgba(245, 158, 11, 0.1);
     }
     
     .pulse-animation {
@@ -82,13 +91,13 @@
     
     @keyframes pulse {
       0% {
-        box-shadow: 0 0 0 0 rgba(245, 188, 2, 0.7);
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
       }
       70% {
-        box-shadow: 0 0 0 10px rgba(245, 188, 2, 0);
+        box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
       }
       100% {
-        box-shadow: 0 0 0 0 rgba(245, 188, 2, 0);
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
       }
     }
     
@@ -112,7 +121,7 @@
     }
     
     .hero-image {
-      background: linear-gradient(45deg, rgba(245, 188, 2, 0.15), rgba(59, 130, 246, 0.15)),
+      background: linear-gradient(45deg, rgba(245, 158, 11, 0.15), rgba(59, 130, 246, 0.1)),
                   url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
       background-size: cover;
       background-position: center;
@@ -130,15 +139,16 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: linear-gradient(90deg, transparent, #f5bc02, transparent);
+      background: linear-gradient(90deg, transparent, #f59e0b, transparent);
     }
     
     .mockup-frame {
       position: relative;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e2e8f0;
+      background: white;
     }
     
     .mockup-frame::before {
@@ -148,8 +158,8 @@
       left: 0;
       right: 0;
       height: 30px;
-      background: #1e293b;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
       z-index: 10;
     }
     
@@ -179,18 +189,18 @@
     .whatsapp-button:hover {
       background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+      box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
     }
     
     .yellow-button {
-      background: linear-gradient(135deg, #f5bc02 0%, #f59e0b 100%);
-      color: #1e293b;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: white;
     }
     
     .yellow-button:hover {
-      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(245, 188, 2, 0.3);
+      box-shadow: 0 10px 20px rgba(245, 158, 11, 0.2);
     }
     
     .meta-button {
@@ -201,38 +211,40 @@
     .meta-button:hover {
       background: linear-gradient(135deg, #0066cc 0%, #004d99 100%);
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0, 132, 255, 0.3);
+      box-shadow: 0 10px 20px rgba(0, 132, 255, 0.2);
+    }
+    
+    .google-button {
+      background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+      color: white;
+    }
+    
+    .google-button:hover {
+      background: linear-gradient(135deg, #34a853 0%, #0d652d 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(66, 133, 244, 0.2);
+    }
+    
+    .premium-button {
+      background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+      color: white;
+    }
+    
+    .premium-button:hover {
+      background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2);
     }
     
     .floating-whatsapp {
       background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
     }
     
     .floating-whatsapp:hover {
       background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
       transform: scale(1.1);
-      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
-    }
-    
-    /* Adicionando estilo para o selo de Meta Ads */
-    .meta-badge {
-      background: linear-gradient(135deg, #0084ff 0%, #0066cc 100%);
-      box-shadow: 0 5px 15px rgba(0, 132, 255, 0.3);
-    }
-    
-    /* Animações suaves */
-    .subtle-pulse {
-      animation: subtlePulse 3s infinite;
-    }
-    
-    @keyframes subtlePulse {
-      0%, 100% {
-        box-shadow: 0 0 0 0 rgba(245, 188, 2, 0.2);
-      }
-      50% {
-        box-shadow: 0 0 0 8px rgba(245, 188, 2, 0);
-      }
+      box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
     }
     
     /* Estilo para cards simétricos */
@@ -248,7 +260,7 @@
     
     /* Gradiente elegante */
     .elegant-gradient {
-      background: linear-gradient(135deg, rgba(245, 188, 2, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
     }
     
     /* Container balanceado */
@@ -263,35 +275,120 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+    
+    /* Estilos para os planos */
+    .plan-card {
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background: white;
+      border: 1px solid #e2e8f0;
+    }
+    
+    .plan-card.featured {
+      border: 2px solid #f59e0b;
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+    }
+    
+    .plan-header {
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .plan-body {
+      padding: 0 2rem 2rem;
+    }
+    
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .plan-features li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #f1f5f9;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .plan-features li:last-child {
+      border-bottom: none;
+    }
+    
+    .plan-features li i {
+      margin-right: 12px;
+      margin-top: 4px;
+    }
+    
+    .plan-price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    
+    /* Seções com fundo mais claro */
+    .light-section {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    }
+    
+    .lighter-section {
+      background: white;
+    }
+    
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    
+    .badge-yellow {
+      background-color: rgba(245, 158, 11, 0.1);
+      color: #b45309;
+    }
+    
+    .badge-blue {
+      background-color: rgba(59, 130, 246, 0.1);
+      color: #1d4ed8;
+    }
+    
+    .badge-purple {
+      background-color: rgba(139, 92, 246, 0.1);
+      color: #7c3aed;
+    }
   </style>
 </head>
 
-<body class="bg-gray-950 text-gray-100">
+<body class="text-gray-700">
   
   <!-- Navegação Fixa -->
-  <nav id="navbar" class="fixed w-full z-50 py-4 px-6 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800 transition-all duration-300 nav-hidden">
+  <nav id="navbar" class="fixed w-full z-50 py-4 px-6 bg-white/90 backdrop-blur-sm border-b border-gray-200 transition-all duration-300 nav-hidden">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-yellow-500/20">
-          <i class="fas fa-lightbulb text-yellow-500 text-xl"></i>
+          <i class="fas fa-lightbulb text-yellow-600 text-xl"></i>
         </div>
         <div>
           <div class="logo-font text-xl">
-            <span class="font-bold text-yellow-400">LUMEN</span>
+            <span class="font-bold text-yellow-600">LUMEN</span>
             <span class="font-light text-yellow-500">STUDIO</span>
           </div>
-          <div class="text-xs text-gray-400 -mt-1">Sites profissionais para comércios locais</div>
+          <div class="text-xs text-gray-500 -mt-1">Sites profissionais para comércios locais</div>
         </div>
       </div>
       
       <div class="flex items-center gap-4">
-        <div class="hidden md:flex items-center gap-2 px-4 py-2 bg-gray-800/50 rounded-lg border border-gray-700">
-          <i class="fab fa-google text-yellow-500"></i>
-          <i class="fab fa-facebook text-blue-500"></i>
-          <span class="text-sm font-medium text-gray-300">+ Meta Ads</span>
+        <div class="hidden md:flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg border border-gray-200">
+          <i class="fab fa-google text-yellow-600"></i>
+          <i class="fab fa-facebook text-blue-600"></i>
+          <span class="text-sm font-medium text-gray-700">+ Marketing Digital</span>
         </div>
         
-        <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-5 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2">
+        <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-5 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 text-white">
           <i class="fab fa-whatsapp"></i>
           Falar no WhatsApp
         </button>
@@ -302,82 +399,82 @@
   <!-- HERO com transição suave -->
   <section class="min-h-screen flex items-center justify-center px-6 pt-16 relative overflow-hidden">
     <div class="absolute inset-0 hero-image"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-gray-950/85 via-gray-950/75 to-gray-950"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-white/85 via-white/75 to-white"></div>
     
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="text-left">
           <div class="inline-flex items-center px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-6">
-            <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
-            <span class="text-yellow-500 font-medium">Transforme Seu Negócio Local</span>
+            <i class="fas fa-lightbulb text-yellow-600 mr-2"></i>
+            <span class="text-yellow-600 font-medium">Transforme Seu Negócio Local</span>
           </div>
           
-          <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 class="text-5xl md:text-6xl font-bold leading-tight text-gray-800">
             Seu comércio merece um site que 
             <span class="gradient-text">gera resultados</span>
           </h1>
           
-          <p class="mt-6 text-gray-300 text-xl">
-            Na <strong class="text-yellow-500">LumenStudio</strong>, crio sites profissionais e <strong>ultrarápidos</strong> para comércios locais. Agora também com <strong class="text-blue-400">gestão de Meta Ads</strong> para trazer ainda mais clientes.
+          <p class="mt-6 text-gray-600 text-xl">
+            Na <strong class="text-yellow-600">LumenStudio</strong>, crio sites profissionais e <strong>ultrarápidos</strong> para comércios locais. Agora também com <strong class="text-blue-600">gestão de tráfego pago</strong> para trazer ainda mais clientes.
           </p>
           
           <!-- Destaque elegante para aumentar conversão -->
-          <div class="mt-8 p-6 elegant-gradient backdrop-blur-sm border border-yellow-500/20 rounded-xl subtle-pulse">
+          <div class="mt-8 p-6 elegant-gradient backdrop-blur-sm border border-yellow-500/20 rounded-xl">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 gradient-bg-yellow rounded-lg flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-gift text-gray-950 text-lg"></i>
+                <i class="fas fa-gift text-white text-lg"></i>
               </div>
               <div>
-                <p class="text-lg font-medium">
-                  <span class="text-yellow-500 font-bold">Oferta Especial:</span>
-                  Seu site no ar em até <strong>7 dias</strong> + <strong>configuração inicial de Meta Ads gratuita</strong>.
+                <p class="text-lg font-medium text-gray-800">
+                  <span class="text-yellow-600 font-bold">Oferta Especial:</span>
+                  Seu site no ar em até <strong>7 dias</strong> + <strong>consultoria gratuita de marketing digital</strong>.
                 </p>
                 <div class="flex items-center mt-3">
-                  <div class="flex items-center text-sm text-yellow-400/80">
+                  <div class="flex items-center text-sm text-yellow-600">
                     <i class="fas fa-users mr-2"></i>
-                    Apenas <span class="font-bold mx-1">3</span> vagas disponíveis este mês
+                    Apenas <span class="font-bold mx-1">5</span> vagas disponíveis este mês
                   </div>
                 </div>
               </div>
             </div>
           </div>
           
-          <button onclick="chamarWhats()" 
+          <button onclick="chamarWhats('Quero saber mais sobre os planos')" 
             class="mt-8 whatsapp-button px-10 py-5 rounded-xl text-lg font-bold text-white transition-all duration-300 pulse-animation flex items-center justify-center gap-3 w-full max-w-md">
             <i class="fab fa-whatsapp"></i>
-            QUERO MEU SITE AGORA
+            FALAR COM ESPECIALISTA
             <i class="fas fa-arrow-right"></i>
           </button>
           
           <!-- Benefícios em linha única - mais coeso -->
-          <div class="mt-10 flex flex-wrap gap-8 text-gray-300">
+          <div class="mt-10 flex flex-wrap gap-8 text-gray-600">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center">
-                <i class="fas fa-search text-yellow-500"></i>
+                <i class="fas fa-search text-yellow-600"></i>
               </div>
               <div>
-                <p class="font-semibold">Otimizado para Google</p>
-                <p class="text-sm text-gray-400">Apareça nas buscas</p>
+                <p class="font-semibold text-gray-800">Otimizado para Google</p>
+                <p class="text-sm text-gray-500">Apareça nas buscas</p>
               </div>
             </div>
             
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                <i class="fab fa-facebook text-blue-500"></i>
+                <i class="fab fa-facebook text-blue-600"></i>
               </div>
               <div>
-                <p class="font-semibold">+ Meta Ads</p>
-                <p class="text-sm text-gray-400">Gestão opcional</p>
+                <p class="font-semibold text-gray-800">+ Meta Ads</p>
+                <p class="text-sm text-gray-500">Gestão opcional</p>
               </div>
             </div>
             
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center">
-                <i class="fas fa-ban text-yellow-500"></i>
+              <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
+                <i class="fas fa-ban text-green-600"></i>
               </div>
               <div>
-                <p class="font-semibold">Sem mensalidade</p>
-                <p class="text-sm text-gray-400">Pague apenas uma vez</p>
+                <p class="font-semibold text-gray-800">Sem mensalidade</p>
+                <p class="text-sm text-gray-500">Pague apenas uma vez</p>
               </div>
             </div>
           </div>
@@ -395,14 +492,14 @@
               <div class="flex items-center justify-between mb-6">
                 <div class="flex items-center gap-3">
                   <div class="w-10 h-10 gradient-bg-yellow rounded-lg flex items-center justify-center">
-                    <i class="fab fa-google text-gray-950"></i>
+                    <i class="fab fa-google text-white"></i>
                   </div>
                   <div class="w-10 h-10 gradient-bg-meta rounded-lg flex items-center justify-center">
                     <i class="fab fa-facebook text-white"></i>
                   </div>
                 </div>
                 <div class="text-right">
-                  <p class="text-sm text-gray-400">Visibilidade total</p>
+                  <p class="text-sm text-gray-500">Visibilidade total</p>
                   <p class="text-lg font-bold gradient-text">Google + Facebook</p>
                 </div>
               </div>
@@ -413,9 +510,9 @@
               >
             </div>
           </div>
-          <div class="mt-6 p-4 bg-gray-900/50 rounded-xl border border-gray-800">
-            <p class="text-center text-gray-400">
-              <i class="fas fa-star text-yellow-500 mr-2"></i>
+          <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+            <p class="text-center text-gray-600">
+              <i class="fas fa-star text-yellow-600 mr-2"></i>
               Exemplo de site profissional para comércio local
             </p>
           </div>
@@ -424,71 +521,71 @@
     </div>
   </section>
 
-  <!-- NOVA SEÇÃO: Visibilidade Explicada para Leigos -->
-  <section class="py-20 px-6 bg-gradient-to-b from-gray-950 to-gray-900">
+  <!-- SEÇÃO: Visibilidade Explicada para Leigos -->
+  <section class="py-20 px-6 light-section">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold">
+        <h2 class="text-4xl font-bold text-gray-800">
           Como seus clientes vão <span class="gradient-text">encontrar seu negócio</span>
         </h2>
-        <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
           Explicação simples para quem não é especialista em marketing digital
         </p>
       </div>
       
       <div class="balanced-container fade-in">
         <!-- Google -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover">
+        <div class="symmetric-card bg-white rounded-2xl overflow-hidden card-hover">
           <div class="h-48 overflow-hidden relative">
             <img 
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
               alt="Google Search"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-40"></div>
             <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
-              <i class="fab fa-google text-lg text-gray-950"></i>
+              <i class="fab fa-google text-lg text-white"></i>
             </div>
           </div>
           <div class="p-8 symmetric-card-content">
-            <h3 class="text-2xl font-bold mb-4">No Google (Gratuito)</h3>
-            <p class="text-gray-400 mb-6">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">No Google (Gratuito)</h3>
+            <p class="text-gray-600 mb-6">
               Seu site otimizado aparece quando alguém na sua cidade pesquisa por:
             </p>
             <div class="space-y-4">
               <div class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-search text-yellow-500 text-xs"></i>
+                  <i class="fas fa-search text-yellow-600 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">"pizzaria perto de mim"</p>
-                  <p class="text-gray-400 text-sm">Se você tem uma pizzaria</p>
+                  <p class="font-medium text-gray-800">"pizzaria perto de mim"</p>
+                  <p class="text-gray-500 text-sm">Se você tem uma pizzaria</p>
                 </div>
               </div>
               
               <div class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-search text-yellow-500 text-xs"></i>
+                  <i class="fas fa-search text-yellow-600 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">"encanador [sua cidade]"</p>
-                  <p class="text-gray-400 text-sm">Se você é encanador</p>
+                  <p class="font-medium text-gray-800">"encanador [sua cidade]"</p>
+                  <p class="text-gray-500 text-sm">Se você é encanador</p>
                 </div>
               </div>
               
               <div class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-search text-yellow-500 text-xs"></i>
+                  <i class="fas fa-search text-yellow-600 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">"loja de material de construção"</p>
-                  <p class="text-gray-400 text-sm">Se você tem uma loja</p>
+                  <p class="font-medium text-gray-800">"loja de material de construção"</p>
+                  <p class="text-gray-500 text-sm">Se você tem uma loja</p>
                 </div>
               </div>
             </div>
             
-            <div class="mt-8 p-4 bg-yellow-500/10 rounded-xl border border-yellow-500/20">
-              <p class="text-yellow-400 text-sm">
+            <div class="mt-8 p-4 bg-yellow-50 rounded-xl border border-yellow-200">
+              <p class="text-yellow-700 text-sm">
                 <i class="fas fa-info-circle mr-2"></i>
                 <strong>Como funciona:</strong> Google encontra seu site e mostra para quem busca na região. Quanto melhor otimizado, mais acima aparece.
               </p>
@@ -497,57 +594,57 @@
         </div>
         
         <!-- Meta Ads -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover">
+        <div class="symmetric-card bg-white rounded-2xl overflow-hidden card-hover">
           <div class="h-48 overflow-hidden relative">
             <img 
               src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
               alt="Facebook e Instagram"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-40"></div>
             <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-meta rounded-xl flex items-center justify-center">
               <i class="fab fa-facebook text-lg text-white"></i>
             </div>
           </div>
           <div class="p-8 symmetric-card-content">
-            <h3 class="text-2xl font-bold mb-4">Meta Ads (Pago)</h3>
-            <p class="text-gray-400 mb-6">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Meta Ads (Pago)</h3>
+            <p class="text-gray-600 mb-6">
               Seu anúncio aparece diretamente para potenciais clientes:
             </p>
             <div class="space-y-4">
               <div class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fab fa-facebook text-blue-500 text-xs"></i>
+                  <i class="fab fa-facebook text-blue-600 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">No Facebook</p>
-                  <p class="text-gray-400 text-sm">Enquanto navegam no feed de notícias</p>
+                  <p class="font-medium text-gray-800">No Facebook</p>
+                  <p class="text-gray-500 text-sm">Enquanto navegam no feed de notícias</p>
                 </div>
               </div>
               
               <div class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-pink-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fab fa-instagram text-pink-500 text-xs"></i>
+                  <i class="fab fa-instagram text-pink-600 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">No Instagram</p>
-                  <p class="text-gray-400 text-sm">Entre stories e posts que seguem</p>
+                  <p class="font-medium text-gray-800">No Instagram</p>
+                  <p class="text-gray-500 text-sm">Entre stories e posts que seguem</p>
                 </div>
               </div>
               
               <div class="flex items-start gap-3">
                 <div class="w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-bullseye text-blue-500 text-xs"></i>
+                  <i class="fas fa-bullseye text-blue-600 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">Pessoas específicas</p>
-                  <p class="text-gray-400 text-sm">Da sua cidade, idade e interesses</p>
+                  <p class="font-medium text-gray-800">Pessoas específicas</p>
+                  <p class="text-gray-500 text-sm">Da sua cidade, idade e interesses</p>
                 </div>
               </div>
             </div>
             
-            <div class="mt-8 p-4 bg-blue-500/10 rounded-xl border border-blue-500/20">
-              <p class="text-blue-400 text-sm">
+            <div class="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-200">
+              <p class="text-blue-700 text-sm">
                 <i class="fas fa-info-circle mr-2"></i>
                 <strong>Como funciona:</strong> Você investe um valor (ex: R$ 300/mês) e seu anúncio aparece para milhares de pessoas na região. Quem clica, vai direto para seu site/WhatsApp.
               </p>
@@ -555,163 +652,345 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: QUATRO PLANOS DE SERVIÇO -->
+  <section class="py-20 px-6 lighter-section">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800">Escolha o plano ideal para seu negócio</h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+          Do site básico ao completo com gestão de tráfego pago
+        </p>
+      </div>
       
-      <!-- Comparação simples -->
-      <div class="mt-16 fade-in">
-        <div class="bg-gray-800/30 rounded-2xl p-8 border border-gray-700">
-          <h3 class="text-2xl font-bold text-center mb-8">
-            <span class="gradient-text">Google vs Meta Ads:</span> Qual a diferença?
-          </h3>
-          
-          <div class="grid md:grid-cols-2 gap-8">
-            <div class="text-center">
-              <div class="w-16 h-16 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fab fa-google text-2xl text-gray-950"></i>
-              </div>
-              <h4 class="text-xl font-bold mb-3">Google (Orgânico)</h4>
-              <ul class="space-y-3 text-gray-400 text-left">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span><strong>Gratuito</strong> (depois do site pronto)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Pessoas que <strong>já estão procurando</strong> seu serviço</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Resultados crescem com o tempo</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-clock text-yellow-500 mt-1"></i>
-                  <span>Pode levar algumas semanas para aparecer bem</span>
-                </li>
-              </ul>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Plano 1: Site Profissional -->
+        <div class="plan-card fade-in">
+          <div class="plan-header">
+            <div class="w-16 h-16 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-globe text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Site Profissional</h3>
+            <p class="text-gray-600 mb-4">Perfeito para começar no digital</p>
+            
+            <div class="mb-6">
+              <span class="text-3xl font-bold gradient-text">Sob consulta</span>
+              <p class="text-gray-500 text-sm mt-1">Valor personalizado</p>
             </div>
             
-            <div class="text-center">
-              <div class="w-16 h-16 gradient-bg-meta rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fab fa-facebook text-2xl text-white"></i>
-              </div>
-              <h4 class="text-xl font-bold mb-3">Meta Ads (Pago)</h4>
-              <ul class="space-y-3 text-gray-400 text-left">
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-dollar-sign text-blue-500 mt-1"></i>
-                  <span>Requer <strong>investimento mensal</strong> (a partir de R$ 300)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Alcance <strong>imediato</strong> desde o primeiro dia</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Mostra para quem <strong>nunca ouviu falar</strong> do seu negócio</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="fas fa-check text-green-500 mt-1"></i>
-                  <span>Controle total sobre quem vê seu anúncio</span>
-                </li>
-              </ul>
-            </div>
+            <button onclick="chamarWhats('Site Profissional - Quero orçamento')" 
+              class="w-full yellow-button px-6 py-3 rounded-lg font-bold transition-all duration-300">
+              SOLICITAR ORÇAMENTO
+            </button>
           </div>
           
-          <div class="mt-8 p-6 elegant-gradient rounded-xl border border-yellow-500/20">
-            <p class="text-center text-lg">
-              <span class="text-yellow-500 font-bold">Dica profissional:</span> 
-              Comece com um site otimizado para Google (gratuito) e depois, se quiser resultados mais rápidos, adicione Meta Ads.
+          <div class="plan-body">
+            <h4 class="font-bold text-gray-800 mb-4">O que está incluído:</h4>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check text-green-500"></i>
+                <span>Site otimizado para o Google</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-500"></i>
+                <span>Design responsivo (celular e computador)</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-500"></i>
+                <span>WhatsApp integrado</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-500"></i>
+                <span>Pronto em 7 dias úteis</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-500"></i>
+                <span>Hospedagem grátis por 1 ano</span>
+              </li>
+              <li>
+                <i class="fas fa-times text-gray-300"></i>
+                <span class="text-gray-400">Domínio não incluso</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Plano 2: Site + Meta Ads (Mais Popular) -->
+        <div class="plan-card featured fade-in">
+          <div class="absolute top-4 right-4">
+            <span class="badge badge-yellow">
+              <i class="fas fa-crown mr-1"></i> MAIS POPULAR
+            </span>
+          </div>
+          
+          <div class="plan-header">
+            <div class="w-16 h-16 gradient-bg-meta rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fab fa-facebook text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Site + Meta Ads</h3>
+            <p class="text-gray-600 mb-4">Para quem quer visibilidade no Facebook/Instagram</p>
+            
+            <div class="mb-6">
+              <span class="text-3xl font-bold gradient-text">Sob consulta</span>
+              <p class="text-gray-500 text-sm mt-1">Investimento mensal em anúncios</p>
+            </div>
+            
+            <button onclick="chamarWhats('Site + Meta Ads - Quero orçamento')" 
+              class="w-full meta-button px-6 py-3 rounded-lg font-bold transition-all duration-300">
+              SOLICITAR ORÇAMENTO
+            </button>
+          </div>
+          
+          <div class="plan-body">
+            <h4 class="font-bold text-gray-800 mb-4">Tudo do Site Profissional +</h4>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check text-blue-500"></i>
+                <span><strong>Configuração inicial de Meta Ads</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check text-blue-500"></i>
+                <span>Anúncios no Facebook e Instagram</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-blue-500"></i>
+                <span>Públicos-alvo definidos para sua cidade</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-blue-500"></i>
+                <span>1 mês de <strong>gestão básica</strong> incluída*</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-blue-500"></i>
+                <span>Relatório de desempenho mensal</span>
+              </li>
+              <li>
+                <i class="fas fa-times text-gray-300"></i>
+                <span class="text-gray-400">Domínio não incluso</span>
+              </li>
+            </ul>
+            
+            <p class="text-gray-500 text-sm mt-4">
+              *Após o primeiro mês, gestão profissional por investimento mensal adicional
             </p>
           </div>
+        </div>
+        
+        <!-- Plano 3: Site + Google Ads -->
+        <div class="plan-card fade-in">
+          <div class="plan-header">
+            <div class="w-16 h-16 gradient-bg-google rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fab fa-google text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Site + Google Ads</h3>
+            <p class="text-gray-600 mb-4">Para quem quer aparecer no topo do Google</p>
+            
+            <div class="mb-6">
+              <span class="text-3xl font-bold gradient-text">Sob consulta</span>
+              <p class="text-gray-500 text-sm mt-1">Investimento mensal em anúncios</p>
+            </div>
+            
+            <button onclick="chamarWhats('Site + Google Ads - Quero orçamento')" 
+              class="w-full google-button px-6 py-3 rounded-lg font-bold transition-all duration-300">
+              SOLICITAR ORÇAMENTO
+            </button>
+          </div>
+          
+          <div class="plan-body">
+            <h4 class="font-bold text-gray-800 mb-4">Tudo do Site Profissional +</h4>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check text-green-600"></i>
+                <span><strong>Configuração inicial de Google Ads</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-600"></i>
+                <span>Anúncios no topo das pesquisas do Google</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-600"></i>
+                <span>Palavras-chave otimizadas para seu negócio</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-600"></i>
+                <span>1 mês de <strong>gestão básica</strong> incluída*</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-green-600"></i>
+                <span>Relatório de desempenho mensal</span>
+              </li>
+              <li>
+                <i class="fas fa-times text-gray-300"></i>
+                <span class="text-gray-400">Domínio não incluso</span>
+              </li>
+            </ul>
+            
+            <p class="text-gray-500 text-sm mt-4">
+              *Após o primeiro mês, gestão profissional por investimento mensal adicional
+            </p>
+          </div>
+        </div>
+        
+        <!-- Plano 4: Site + Meta + Google (Premium) -->
+        <div class="plan-card fade-in">
+          <div class="plan-header">
+            <div class="w-16 h-16 gradient-bg-premium rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-crown text-2xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Site + Meta + Google</h3>
+            <p class="text-gray-600 mb-4">Visibilidade máxima em todas as plataformas</p>
+            
+            <div class="mb-6">
+              <span class="text-3xl font-bold gradient-text">Sob consulta</span>
+              <p class="text-gray-500 text-sm mt-1">Investimento mensal em anúncios</p>
+            </div>
+            
+            <button onclick="chamarWhats('Site + Meta + Google - Quero orçamento')" 
+              class="w-full premium-button px-6 py-3 rounded-lg font-bold transition-all duration-300">
+              SOLICITAR ORÇAMENTO
+            </button>
+          </div>
+          
+          <div class="plan-body">
+            <h4 class="font-bold text-gray-800 mb-4">Todos os benefícios anteriores +</h4>
+            <ul class="plan-features">
+              <li>
+                <i class="fas fa-check text-purple-600"></i>
+                <span><strong>Site Profissional completo</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check text-purple-600"></i>
+                <span><strong>Meta Ads configurado</strong> (Facebook/Instagram)</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-purple-600"></i>
+                <span><strong>Google Ads configurado</strong></span>
+              </li>
+              <li>
+                <i class="fas fa-check text-purple-600"></i>
+                <span>1 mês de <strong>gestão completa</strong> incluída*</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-purple-600"></i>
+                <span>Relatório comparativo entre plataformas</span>
+              </li>
+              <li>
+                <i class="fas fa-check text-purple-600"></i>
+                <span><strong>Consultoria estratégica mensal</strong></span>
+              </li>
+            </ul>
+            
+            <p class="text-gray-500 text-sm mt-4">
+              *Após o primeiro mês, gestão profissional por investimento mensal adicional
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center fade-in">
+        <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 max-w-2xl mx-auto">
+          <h4 class="font-bold text-gray-800 mb-3">
+            <i class="fas fa-info-circle text-yellow-600 mr-2"></i>
+            Como funciona o investimento em anúncios?
+          </h4>
+          <p class="text-gray-600">
+            Nos planos com tráfego pago, você define um orçamento mensal (ex: R$ 300 a R$ 1.000) que será investido diretamente nas plataformas (Meta e/ou Google). 
+            Meu serviço é a <strong>configuração e gestão profissional</strong> desses anúncios para maximizar seus resultados.
+          </p>
+          <button onclick="chamarWhats('Quero entender melhor sobre investimento em anúncios')" 
+            class="mt-4 yellow-button px-6 py-3 rounded-lg font-bold transition-all duration-300">
+            ENTENDER MELHOR OS VALORES
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BENEFÍCIOS VISUAIS - Agora com transição suave -->
-  <section class="py-20 px-6 bg-gray-900">
+  <!-- BENEFÍCIOS VISUAIS -->
+  <section class="py-20 px-6 light-section">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold">
-          Ilumine seu negócio com um site que <span class="gradient-text">converte</span>
+        <h2 class="text-4xl font-bold text-gray-800">
+          Por que escolher a <span class="gradient-text">LumenStudio</span>
         </h2>
-        <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
-          Veja como um site profissional transforma a maneira como seus clientes encontram e confiam no seu negócio
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+          Diferenciais que fazem a diferença para seu negócio local
         </p>
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Card 1 - Mantido original -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+        <div class="symmetric-card bg-white rounded-2xl overflow-hidden card-hover fade-in">
           <div class="h-48 overflow-hidden relative">
             <img 
-              src="https://plus.unsplash.com/premium_photo-1758601566644-13ad730a3fe5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Site rápido no celular"
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+              alt="Foco em resultados"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-40"></div>
             <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
-              <i class="fas fa-tachometer-alt text-lg text-gray-950"></i>
+              <i class="fas fa-chart-line text-lg text-white"></i>
             </div>
           </div>
           <div class="p-6 symmetric-card-content">
-            <h3 class="text-xl font-bold mb-3">Velocidade que impressiona</h3>
-            <p class="text-gray-400 mb-4">
-              Sites que carregam instantaneamente no celular. 
-              <span class="text-yellow-500 font-medium">Google adora isso</span> e seus clientes também.
+            <h3 class="text-xl font-bold mb-3 text-gray-800">Foco em Resultados</h3>
+            <p class="text-gray-600 mb-4">
+              Não criamos apenas sites bonitos. Criamos <span class="text-yellow-600 font-medium">ferramentas de vendas</span> que trazem clientes reais para seu negócio.
             </p>
             <div class="flex items-center text-sm text-gray-500">
-              <i class="fas fa-clock text-yellow-500 mr-2"></i>
-              Carregamento em menos de 2 segundos
+              <i class="fas fa-bullseye text-yellow-600 mr-2"></i>
+              Métricas claras e acompanhamento
             </div>
           </div>
         </div>
         
-        <!-- Card 2 - WhatsApp integrado -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+        <div class="symmetric-card bg-white rounded-2xl overflow-hidden card-hover fade-in">
           <div class="h-48 overflow-hidden relative">
             <img 
-              src="https://images.unsplash.com/photo-1762330469727-156f5369e4f9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="WhatsApp integrado"
+              src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+              alt="Comunicação direta"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-40"></div>
             <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
-              <i class="fab fa-whatsapp text-lg text-gray-950"></i>
+              <i class="fas fa-comments text-lg text-white"></i>
             </div>
           </div>
           <div class="p-6 symmetric-card-content">
-            <h3 class="text-xl font-bold mb-3">WhatsApp Integrado</h3>
-            <p class="text-gray-400 mb-4">
-              Cliente vê seu produto e já clica para falar com você. 
-              <span class="text-yellow-500 font-medium">Conversão direta</span> sem barreiras.
+            <h3 class="text-xl font-bold mb-3 text-gray-800">Atendimento Direto</h3>
+            <p class="text-gray-600 mb-4">
+              Você fala diretamente comigo, Rafael, especialista em sites para comércios locais. 
+              <span class="text-yellow-600 font-medium">Sem intermediários</span>, sem burocracia.
             </p>
             <div class="flex items-center text-sm text-gray-500">
-              <i class="fas fa-comment text-yellow-500 mr-2"></i>
-              Atendimento direto do seu site
+              <i class="fas fa-headset text-yellow-600 mr-2"></i>
+              Respostas rápidas no WhatsApp
             </div>
           </div>
         </div>
         
-        <!-- Card 3 - NOVO: Meta Ads opcional -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+        <div class="symmetric-card bg-white rounded-2xl overflow-hidden card-hover fade-in">
           <div class="h-48 overflow-hidden relative">
             <img 
-              src="https://images.unsplash.com/photo-1633113090205-cc1ac795b5f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
-              alt="Meta Ads Dashboard"
+              src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+              alt="Tecnologia moderna"
               class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
             >
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
-            <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-meta rounded-xl flex items-center justify-center">
-              <i class="fab fa-facebook text-lg text-white"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-40"></div>
+            <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
+              <i class="fas fa-rocket text-lg text-white"></i>
             </div>
           </div>
           <div class="p-6 symmetric-card-content">
-            <h3 class="text-xl font-bold mb-3">+ Meta Ads (Opcional)</h3>
-            <p class="text-gray-400 mb-4">
-              Quer resultados mais rápidos? Ofereço <span class="text-blue-400 font-medium">gestão profissional de anúncios</span> no Facebook e Instagram.
+            <h3 class="text-xl font-bold mb-3 text-gray-800">Tecnologia de Ponta</h3>
+            <p class="text-gray-600 mb-4">
+              Sites desenvolvidos com as tecnologias mais modernas para garantir 
+              <span class="text-yellow-600 font-medium">velocidade, segurança e performance</span> excepcionais.
             </p>
             <div class="flex items-center text-sm text-gray-500">
-              <i class="fas fa-bullseye text-blue-400 mr-2"></i>
-              Serviço adicional - investimento mensal
+              <i class="fas fa-code text-yellow-600 mr-2"></i>
+              Desenvolvimento otimizado
             </div>
           </div>
         </div>
@@ -719,444 +998,154 @@
       
       <!-- Estatísticas para criar credibilidade -->
       <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center fade-in">
-        <div class="p-6 bg-gray-800/30 rounded-xl">
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
           <div class="text-4xl font-bold gradient-text">100%</div>
-          <div class="text-gray-400 mt-2">Focado em resultado</div>
+          <div class="text-gray-600 mt-2">Focado em resultado</div>
         </div>
-        <div class="p-6 bg-gray-800/30 rounded-xl">
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
           <div class="text-4xl font-bold gradient-text">+50</div>
-          <div class="text-gray-400 mt-2">Sites entregues</div>
+          <div class="text-gray-600 mt-2">Sites entregues</div>
         </div>
-        <div class="p-6 bg-gray-800/30 rounded-xl">
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
           <div class="text-4xl font-bold gradient-text">24h</div>
-          <div class="text-gray-400 mt-2">Suporte rápido</div>
+          <div class="text-gray-600 mt-2">Suporte rápido</div>
         </div>
-        <div class="p-6 bg-gray-800/30 rounded-xl">
+        <div class="p-6 bg-white rounded-xl border border-gray-200">
           <div class="text-4xl font-bold gradient-text">0</div>
-          <div class="text-gray-400 mt-2">Mensalidade</div>
+          <div class="text-gray-600 mt-2">Mensalidade</div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ANTES E DEPOIS - Versão refinada -->
-  <section class="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-950">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold">Transformação real para comércios locais</h2>
-        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-          Veja a diferença que um site profissional faz para negócios como o seu
-        </p>
-      </div>
-      
-      <div class="balanced-container">
-        <div class="fade-in">
-          <div class="bg-gray-800/50 rounded-2xl p-8 h-full">
-            <h3 class="text-2xl font-bold mb-6 flex items-center">
-              <i class="fas fa-times-circle text-gray-400 mr-3"></i>
-              Sem site = Clientes perdidos
-            </h3>
-            <div class="space-y-4">
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-eye-slash text-gray-400"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Invisível no Google</p>
-                  <p class="text-gray-400 text-sm">Quando procuram seu serviço, encontram só seus concorrentes</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-thumbs-down text-gray-400"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Dependência de redes sociais</p>
-                  <p class="text-gray-400 text-sm">Algoritmos mudam e seu alcance cai do dia para a noite</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-user-slash text-gray-400"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Imagem pouco profissional</p>
-                  <p class="text-gray-400 text-sm">WhatsApp ou Instagram não passam a mesma credibilidade</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mt-8 p-6 bg-gray-700/30 rounded-xl border border-gray-600">
-              <p class="text-gray-400">
-                <i class="fas fa-exclamation-circle mr-2"></i>
-                <strong>Resultado:</strong> Menos clientes, mais dependência do boca a boca
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="fade-in">
-          <div class="bg-gray-800/50 rounded-2xl p-8 h-full border border-yellow-500/30">
-            <h3 class="text-2xl font-bold mb-6 flex items-center">
-              <i class="fas fa-check-circle text-yellow-500 mr-3"></i>
-              Com site = Negócio escalável
-            </h3>
-            <div class="space-y-4">
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-eye text-yellow-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Visibilidade 24/7</p>
-                  <p class="text-gray-400 text-sm">Seu negócio aberto na internet, mesmo quando a loja fecha</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-thumbs-up text-yellow-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Credibilidade instantânea</p>
-                  <p class="text-gray-400 text-sm">Site profissional passa confiança antes mesmo do primeiro contato</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-user-plus text-yellow-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Novos clientes direto do Google</p>
-                  <p class="text-gray-400 text-sm">Gente que você nunca alcançaria agora encontra seu negócio</p>
-                </div>
-              </div>
-              
-              <!-- Adicionado opção de Meta Ads -->
-              <div class="flex items-start gap-4 mt-6 pt-6 border-t border-gray-700">
-                <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fab fa-facebook text-blue-500"></i>
-                </div>
-                <div>
-                  <p class="font-medium">+ Meta Ads (Opcional)</p>
-                  <p class="text-gray-400 text-sm">Para quem quer resultados ainda mais rápidos</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mt-8 p-6 bg-yellow-500/10 rounded-xl border border-yellow-500/30">
-              <p class="text-yellow-400">
-                <i class="fas fa-chart-line mr-2"></i>
-                <strong>Resultado:</strong> Mais clientes, menos custo de aquisição, negócio valorizado
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Imagem de resultado -->
-      <div class="mt-16 fade-in">
-        <div class="relative rounded-2xl overflow-hidden">
-          <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-            alt="Empresário feliz com resultados online"
-            class="w-full h-64 object-cover"
-          >
-          <div class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent flex items-end p-8">
-            <div>
-              <p class="text-2xl font-bold">"Com o site da LumenStudio, minhas vendas aumentaram 40% em 3 meses"</p>
-              <p class="text-gray-300 mt-2 flex items-center">
-                <i class="fas fa-user-circle text-yellow-500 mr-2"></i>
-                João, dono de marmitaria local
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PACOTES DE SERVIÇOS - Simétricos e elegantes -->
-  <section class="py-20 px-6 bg-gray-900">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold">Escolha o plano ideal para seu negócio</h2>
-        <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-          Do site básico ao completo com gestão de tráfego
-        </p>
-      </div>
-      
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <!-- Plano Site Básico -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
-          <div class="p-8 symmetric-card-content">
-            <div class="text-center mb-8">
-              <div class="w-16 h-16 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-globe text-2xl text-gray-950"></i>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">Site Profissional</h3>
-              <p class="text-gray-400">Perfeito para começar no digital</p>
-            </div>
-            
-            <div class="mb-8">
-              <div class="text-center">
-                <span class="text-4xl font-bold gradient-text">R$ 997</span>
-                <p class="text-gray-400">ou 12x de R$ 98,70</p>
-              </div>
-            </div>
-            
-            <ul class="space-y-4 mb-8">
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>Site otimizado para <strong>Google</strong></span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>Design responsivo (celular e computador)</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>WhatsApp integrado</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>Pronto em 7 dias úteis</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>Hospedagem grátis por 1 ano</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="p-8 pt-0">
-            <button onclick="chamarWhats('Site Profissional - R$ 997')" 
-              class="w-full yellow-button px-6 py-4 rounded-xl font-bold transition-all duration-300">
-              QUERO APENAS O SITE
-            </button>
-          </div>
-        </div>
-        
-        <!-- Plano Site + Meta Ads -->
-        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in border border-yellow-500/30">
-          <div class="absolute top-4 right-4">
-            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-medium">
-              MAIS POPULAR
-            </span>
-          </div>
-          
-          <div class="p-8 symmetric-card-content">
-            <div class="text-center mb-8">
-              <div class="w-16 h-16 elegant-gradient rounded-full flex items-center justify-center mx-auto mb-4">
-                <div class="flex items-center gap-1">
-                  <i class="fab fa-google text-yellow-500"></i>
-                  <i class="fab fa-facebook text-blue-500"></i>
-                </div>
-              </div>
-              <h3 class="text-2xl font-bold mb-2">Site + Meta Ads</h3>
-              <p class="text-gray-400">Para quem quer resultados rápidos</p>
-            </div>
-            
-            <div class="mb-8">
-              <div class="text-center">
-                <span class="text-4xl font-bold gradient-text">R$ 1.497</span>
-                <p class="text-gray-400">ou 12x de R$ 147,90</p>
-                <p class="text-green-400 text-sm mt-1">
-                  <i class="fas fa-gift mr-1"></i>
-                  Economize R$ 300
-                </p>
-              </div>
-            </div>
-            
-            <ul class="space-y-4 mb-8">
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span><strong>Tudo do plano Site Profissional</strong></span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>+ <strong>Configuração inicial de Meta Ads</strong></span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>Públicos-alvo definidos para sua cidade</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>1 mês de <strong>gestão básica</strong> incluída*</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i class="fas fa-check text-green-500 mt-1"></i>
-                <span>Relatório de desempenho mensal</span>
-              </li>
-            </ul>
-            
-            <p class="text-gray-500 text-sm mb-4">
-              *Após o primeiro mês, gestão profissional por R$ 300/mês (opcional)
-            </p>
-          </div>
-          
-          <div class="p-8 pt-0">
-            <button onclick="chamarWhats('Site + Meta Ads - R$ 1.497')" 
-              class="w-full whatsapp-button px-6 py-4 rounded-xl font-bold text-white transition-all duration-300">
-              QUERO SITE + META ADS
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-12 text-center fade-in">
-        <p class="text-gray-400">
-          <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
-          Dúvidas sobre qual plano escolher? Fale comigo no WhatsApp!
-        </p>
       </div>
     </div>
   </section>
 
   <!-- CTA FINAL ELEGANTE -->
-  <section class="py-20 px-6 relative overflow-hidden">
-    <!-- Imagem de fundo -->
+  <section class="py-20 px-6 relative overflow-hidden lighter-section">
     <div class="absolute inset-0">
-      <img 
-        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-        alt="Empresário feliz com resultados"
-        class="w-full h-full object-cover"
-      >
-      <div class="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/90 to-gray-950/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/70"></div>
     </div>
     
     <div class="max-w-4xl mx-auto relative z-10 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold">
-        Seu próximo cliente está esperando
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800">
+        Pronto para levar seu negócio ao próximo nível?
       </h2>
       
-      <p class="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-        Enquanto você adia, seu concorrente já está fechando vendas pelo site dele.
+      <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+        Converse com um especialista e descubra qual plano é ideal para suas necessidades.
       </p>
       
       <!-- Destaque visual elegante -->
-      <div class="mt-10 p-8 elegant-gradient backdrop-blur-sm rounded-2xl border border-yellow-500/30 max-w-lg mx-auto">
+      <div class="mt-10 p-8 elegant-gradient rounded-2xl border border-yellow-500/20 max-w-lg mx-auto">
         <div class="flex items-center justify-center gap-4 mb-4">
           <div class="w-12 h-12 gradient-bg-yellow rounded-full flex items-center justify-center">
-            <i class="fas fa-gift text-xl text-gray-950"></i>
+            <i class="fas fa-calendar-check text-xl text-white"></i>
           </div>
           <div class="text-left">
-            <p class="font-bold text-lg">Oferta por tempo limitado</p>
-            <p class="text-yellow-400">Configuração de Meta Ads gratuita</p>
+            <p class="font-bold text-lg text-gray-800">Agendamento rápido</p>
+            <p class="text-yellow-600">Conversa sem compromisso</p>
           </div>
         </div>
-        <div class="mt-4 flex items-center justify-center gap-2 text-yellow-400">
+        <div class="mt-4 flex items-center justify-center gap-2 text-yellow-600">
           <i class="fas fa-users"></i>
-          <span>Apenas 3 vagas disponíveis este mês</span>
+          <span>Vagas limitadas para atendimento personalizado</span>
         </div>
       </div>
       
-      <div class="mt-10 grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-        <button onclick="chamarWhats('Site Profissional - R$ 997')" 
-          class="yellow-button px-8 py-5 rounded-xl text-lg font-bold transition-all duration-300">
-          SITE PROFISSIONAL
-          <p class="text-sm font-normal mt-1">R$ 997</p>
-        </button>
-        
-        <button onclick="chamarWhats('Site + Meta Ads - R$ 1.497')" 
-          class="whatsapp-button text-white px-8 py-5 rounded-xl text-lg font-bold transition-all duration-300">
-          SITE + META ADS
-          <p class="text-sm font-normal mt-1">R$ 1.497</p>
-        </button>
-      </div>
+      <button onclick="chamarWhats('Quero agendar uma conversa sobre os planos')" 
+        class="mt-10 whatsapp-button text-white px-14 py-5 rounded-xl text-xl font-bold transition-all duration-300 shadow-lg flex items-center justify-center gap-4 mx-auto w-full max-w-md">
+        <i class="fab fa-whatsapp"></i>
+        AGENDAR CONVERSA
+        <i class="fas fa-arrow-right"></i>
+      </button>
       
       <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-6 text-sm">
         <div class="flex items-center gap-3">
           <div class="w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center">
-            <i class="fas fa-lock text-yellow-500"></i>
+            <i class="fas fa-lock text-yellow-600"></i>
           </div>
-          <span class="text-gray-300">7 dias de garantia</span>
+          <span class="text-gray-600">Sem compromisso inicial</span>
         </div>
         <div class="flex items-center gap-3">
           <div class="w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center">
-            <i class="fas fa-user-clock text-yellow-500"></i>
+            <i class="fas fa-user-clock text-yellow-600"></i>
           </div>
-          <span class="text-gray-300">Atendimento em menos de 15min</span>
+          <span class="text-gray-600">Atendimento em menos de 15min</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- RODAPÉ -->
-  <footer class="py-12 px-6 bg-gray-950 text-center border-t border-gray-800">
+  <footer class="py-12 px-6 bg-gray-50 text-center border-t border-gray-200">
     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-3 gap-8">
         <div class="text-left">
           <div class="flex items-center space-x-3 mb-4">
             <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-yellow-500/20">
-              <i class="fas fa-lightbulb text-yellow-500 text-xl"></i>
+              <i class="fas fa-lightbulb text-yellow-600 text-xl"></i>
             </div>
             <div>
               <div class="logo-font text-xl">
-                <span class="font-bold text-yellow-400">LUMEN</span>
+                <span class="font-bold text-yellow-600">LUMEN</span>
                 <span class="font-light text-yellow-500">STUDIO</span>
               </div>
               <div class="text-gray-500 text-sm">Sites que iluminam seu negócio</div>
             </div>
           </div>
-          <p class="text-gray-400 text-sm">
-            Especializados em criar sites rápidos, leves e eficientes para pequenos e médios negócios locais.
+          <p class="text-gray-600 text-sm">
+            Especializados em criar sites rápidos e eficientes para pequenos e médios negócios locais.
           </p>
           <div class="mt-4 flex items-center gap-3">
-            <div class="px-3 py-1 bg-yellow-500/10 rounded-lg text-xs flex items-center gap-2">
-              <i class="fab fa-google text-yellow-500"></i>
+            <div class="px-3 py-1 bg-gray-100 rounded-lg text-xs flex items-center gap-2">
+              <i class="fab fa-google text-yellow-600"></i>
               Google
             </div>
-            <div class="px-3 py-1 bg-blue-500/10 rounded-lg text-xs flex items-center gap-2">
-              <i class="fab fa-facebook text-blue-500"></i>
+            <div class="px-3 py-1 bg-gray-100 rounded-lg text-xs flex items-center gap-2">
+              <i class="fab fa-facebook text-blue-600"></i>
               Meta Ads
             </div>
           </div>
         </div>
         
         <div class="text-left">
-          <h4 class="font-bold text-lg mb-4 text-yellow-500">Serviços</h4>
-          <ul class="space-y-2 text-gray-400">
+          <h4 class="font-bold text-lg mb-4 text-yellow-600">Serviços</h4>
+          <ul class="space-y-2 text-gray-600">
             <li class="flex items-center gap-2">
-              <i class="fas fa-utensils text-yellow-500 text-sm"></i>
-              Sites para Restaurantes
+              <i class="fas fa-globe text-yellow-600 text-sm"></i>
+              Sites Profissionais
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-store text-yellow-500 text-sm"></i>
-              Sites para Lojas
+              <i class="fab fa-facebook text-blue-600 text-sm"></i>
+              Gestão de Meta Ads
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-tools text-yellow-500 text-sm"></i>
-              Sites para Prestadores de Serviço
+              <i class="fab fa-google text-green-600 text-sm"></i>
+              Gestão de Google Ads
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-user-tie text-yellow-500 text-sm"></i>
-              Sites para Profissionais
+              <i class="fas fa-chart-line text-purple-600 text-sm"></i>
+              Marketing Digital Completo
             </li>
           </ul>
         </div>
         
         <div class="text-left">
-          <h4 class="font-bold text-lg mb-4 text-yellow-500">Contato</h4>
-          <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-6 py-3 rounded-lg font-medium transition flex items-center gap-3 mb-4">
+          <h4 class="font-bold text-lg mb-4 text-yellow-600">Contato</h4>
+          <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-6 py-3 rounded-lg font-medium transition flex items-center gap-3 mb-4 text-white">
             <i class="fab fa-whatsapp"></i>
             Falar no WhatsApp
           </button>
-          <p class="text-gray-400 text-sm">
-            <i class="fas fa-clock text-yellow-500 mr-2"></i>
+          <p class="text-gray-600 text-sm">
+            <i class="fas fa-clock text-yellow-600 mr-2"></i>
             Atendimento rápido e direto<br>
             Segunda a Sexta, 9h às 18h
           </p>
         </div>
       </div>
       
-      <div class="mt-10 pt-8 border-t border-gray-800 text-gray-500 text-sm">
-        <p>© 2025 LumenStudio - Site Desenvolvido por Rafael Garcia</p>
-        <p class="mt-2 text-xs text-gray-600">Iluminando negócios locais, com um site de cada vez.</p>
-        <p class="mt-2 text-xs text-gray-600"> Vanilla com Html-5 + Tailwind Css + JavaScript.</p>
+      <div class="mt-10 pt-8 border-t border-gray-200 text-gray-500 text-sm">
+        <p>© 2025 LumenStudio - Desenvolvido por Rafael Garcia</p>
+        <p class="mt-2 text-xs text-gray-400">Iluminando negócios locais, com um site de cada vez.</p>
+        <p class="mt-2 text-xs text-gray-400">Vanilla com Html-5 + Tailwind Css + JavaScript.</p>
       </div>
     </div>
   </footer>
@@ -1178,7 +1167,7 @@
       
       if (plano) {
         mensagem = encodeURIComponent(
-          `Olá LumenStudio! Vi seu site e quero saber mais sobre o plano: ${plano}. Pode me ajudar?`
+          `Olá LumenStudio! Vi seu site e quero saber mais sobre: ${plano}. Pode me ajudar?`
         );
       } else {
         mensagem = encodeURIComponent(mensagem);
