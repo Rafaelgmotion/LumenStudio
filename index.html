@@ -112,7 +112,7 @@
     }
     
     .hero-image {
-      background: linear-gradient(45deg, rgba(245, 188, 2, 0.15), rgba(59, 130, 246, 0.15), rgba(0, 132, 255, 0.15)),
+      background: linear-gradient(45deg, rgba(245, 188, 2, 0.15), rgba(59, 130, 246, 0.15)),
                   url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
       background-size: cover;
       background-position: center;
@@ -221,21 +221,47 @@
       box-shadow: 0 5px 15px rgba(0, 132, 255, 0.3);
     }
     
-    .urgent-pulse {
-      animation: urgentPulse 3s infinite;
+    /* Animações suaves */
+    .subtle-pulse {
+      animation: subtlePulse 3s infinite;
     }
     
-    @keyframes urgentPulse {
+    @keyframes subtlePulse {
       0%, 100% {
-        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+        box-shadow: 0 0 0 0 rgba(245, 188, 2, 0.2);
       }
       50% {
-        box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+        box-shadow: 0 0 0 8px rgba(245, 188, 2, 0);
       }
     }
     
-    .countdown-timer {
-      background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    /* Estilo para cards simétricos */
+    .symmetric-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .symmetric-card-content {
+      flex-grow: 1;
+    }
+    
+    /* Gradiente elegante */
+    .elegant-gradient {
+      background: linear-gradient(135deg, rgba(245, 188, 2, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+    }
+    
+    /* Container balanceado */
+    .balanced-container {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+    }
+    
+    @media (min-width: 768px) {
+      .balanced-container {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   </style>
 </head>
@@ -254,17 +280,15 @@
             <span class="font-bold text-yellow-400">LUMEN</span>
             <span class="font-light text-yellow-500">STUDIO</span>
           </div>
-          <div class="text-xs text-gray-400 -mt-1">Sites + Tráfego Pago que iluminam seu negócio</div>
+          <div class="text-xs text-gray-400 -mt-1">Sites profissionais para comércios locais</div>
         </div>
       </div>
       
       <div class="flex items-center gap-4">
-        <div class="hidden md:flex items-center gap-3 px-4 py-2 bg-yellow-500/10 rounded-lg border border-yellow-500/20">
+        <div class="hidden md:flex items-center gap-2 px-4 py-2 bg-gray-800/50 rounded-lg border border-gray-700">
           <i class="fab fa-google text-yellow-500"></i>
-          <span class="text-sm font-medium">Google</span>
-          <span class="text-gray-300">+</span>
           <i class="fab fa-facebook text-blue-500"></i>
-          <span class="text-sm font-medium">Meta Ads</span>
+          <span class="text-sm font-medium text-gray-300">+ Meta Ads</span>
         </div>
         
         <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-5 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2">
@@ -283,59 +307,35 @@
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="text-left">
-          <div class="inline-flex items-center px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-4">
-            <i class="fas fa-bolt text-yellow-500 mr-2"></i>
-            <span class="text-yellow-500 font-medium">Transforme Seu Negócio Local Agora</span>
+          <div class="inline-flex items-center px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-full mb-6">
+            <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+            <span class="text-yellow-500 font-medium">Transforme Seu Negócio Local</span>
           </div>
           
           <h1 class="text-5xl md:text-6xl font-bold leading-tight">
-            Seu comércio com 
-            <span class="gradient-text">site + tráfego pago</span>
-            que gera clientes todos os dias
+            Seu comércio merece um site que 
+            <span class="gradient-text">gera resultados</span>
           </h1>
           
           <p class="mt-6 text-gray-300 text-xl">
-            Na <strong class="text-yellow-500">LumenStudio</strong>, não crio apenas sites. Crio <strong>máquinas de vendas</strong> com Meta Ads que trazem clientes reais para seu negócio local.
+            Na <strong class="text-yellow-500">LumenStudio</strong>, crio sites profissionais e <strong>ultrarápidos</strong> para comércios locais. Agora também com <strong class="text-blue-400">gestão de Meta Ads</strong> para trazer ainda mais clientes.
           </p>
           
-          <!-- NOVO: Selo de Meta Ads -->
-          <div class="mt-8 flex flex-wrap gap-4">
-            <div class="px-6 py-3 bg-gradient-to-r from-yellow-500/10 to-yellow-600/10 rounded-xl border border-yellow-500/30 flex items-center gap-3">
-              <i class="fab fa-google text-yellow-500 text-lg"></i>
-              <div>
-                <p class="font-semibold">Otimizado para o Google</p>
-                <p class="text-sm text-gray-400">Apareça nas buscas locais</p>
-              </div>
-            </div>
-            
-            <div class="px-6 py-3 meta-badge rounded-xl border border-blue-500/30 flex items-center gap-3">
-              <i class="fab fa-facebook text-white text-lg"></i>
-              <div>
-                <p class="font-semibold">Gestão de Meta Ads</p>
-                <p class="text-sm text-white/90">Tráfego pago que converte</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Destaque URGENTE para aumentar conversão -->
-          <div class="mt-8 p-6 bg-gradient-to-r from-red-500/10 to-red-600/10 backdrop-blur-sm border border-red-500/30 rounded-xl urgent-pulse">
+          <!-- Destaque elegante para aumentar conversão -->
+          <div class="mt-8 p-6 elegant-gradient backdrop-blur-sm border border-yellow-500/20 rounded-xl subtle-pulse">
             <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                <i class="fas fa-fire text-white text-lg"></i>
+              <div class="w-12 h-12 gradient-bg-yellow rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-gift text-gray-950 text-lg"></i>
               </div>
               <div>
                 <p class="text-lg font-medium">
-                  <span class="text-red-400 font-bold">OFERTA URGENTE:</span>
-                  Pacote completo: Site profissional + Configuração de Meta Ads por apenas <span class="text-yellow-400 font-bold">R$ 1.497</span> (economize R$ 500)
+                  <span class="text-yellow-500 font-bold">Oferta Especial:</span>
+                  Seu site no ar em até <strong>7 dias</strong> + <strong>configuração inicial de Meta Ads gratuita</strong>.
                 </p>
-                <div class="flex items-center mt-2 gap-4">
-                  <div class="flex items-center text-sm text-red-300">
-                    <i class="fas fa-clock mr-2"></i>
-                    <span id="countdown">00:15:00</span> restantes
-                  </div>
-                  <div class="flex items-center text-sm text-red-300">
+                <div class="flex items-center mt-3">
+                  <div class="flex items-center text-sm text-yellow-400/80">
                     <i class="fas fa-users mr-2"></i>
-                    Apenas <span id="vagas-count">3</span> vagas disponíveis
+                    Apenas <span class="font-bold mx-1">3</span> vagas disponíveis este mês
                   </div>
                 </div>
               </div>
@@ -343,9 +343,9 @@
           </div>
           
           <button onclick="chamarWhats()" 
-            class="mt-8 whatsapp-button px-10 py-5 rounded-xl text-lg font-bold text-white transition-all duration-300 pulse-animation flex items-center justify-center gap-3 w-full">
+            class="mt-8 whatsapp-button px-10 py-5 rounded-xl text-lg font-bold text-white transition-all duration-300 pulse-animation flex items-center justify-center gap-3 w-full max-w-md">
             <i class="fab fa-whatsapp"></i>
-            QUERO SITE + TRÁFEGO PAGO AGORA
+            QUERO MEU SITE AGORA
             <i class="fas fa-arrow-right"></i>
           </button>
           
@@ -353,11 +353,21 @@
           <div class="mt-10 flex flex-wrap gap-8 text-gray-300">
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center">
-                <i class="fas fa-chart-line text-yellow-500"></i>
+                <i class="fas fa-search text-yellow-500"></i>
               </div>
               <div>
-                <p class="font-semibold">Meta Ads incluso</p>
-                <p class="text-sm text-gray-400">Gestão profissional</p>
+                <p class="font-semibold">Otimizado para Google</p>
+                <p class="text-sm text-gray-400">Apareça nas buscas</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                <i class="fab fa-facebook text-blue-500"></i>
+              </div>
+              <div>
+                <p class="font-semibold">+ Meta Ads</p>
+                <p class="text-sm text-gray-400">Gestão opcional</p>
               </div>
             </div>
             
@@ -370,20 +380,10 @@
                 <p class="text-sm text-gray-400">Pague apenas uma vez</p>
               </div>
             </div>
-            
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center">
-                <i class="fas fa-mobile-alt text-yellow-500"></i>
-              </div>
-              <div>
-                <p class="font-semibold">Pronto em 7 dias</p>
-                <p class="text-sm text-gray-400">Resultados rápidos</p>
-              </div>
-            </div>
           </div>
         </div>
         
-        <!-- Mockup de site com Meta Ads -->
+        <!-- Mockup de site no celular -->
         <div class="hidden lg:block">
           <div class="mockup-frame transform hover:scale-[1.02] transition-transform duration-300">
             <div class="mockup-dots">
@@ -392,38 +392,31 @@
               <div class="mockup-dot green"></div>
             </div>
             <div class="p-8 pt-12">
-              <div class="bg-gray-800 rounded-xl p-6 mb-4">
-                <div class="flex items-center gap-4 mb-4">
-                  <div class="w-12 h-12 gradient-bg-yellow rounded-lg flex items-center justify-center">
-                    <i class="fas fa-chart-bar text-gray-950"></i>
+              <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 gradient-bg-yellow rounded-lg flex items-center justify-center">
+                    <i class="fab fa-google text-gray-950"></i>
                   </div>
-                  <div>
-                    <p class="font-bold text-lg">Resultados com Meta Ads</p>
-                    <p class="text-sm text-gray-400">Gestão profissional do seu tráfego pago</p>
+                  <div class="w-10 h-10 gradient-bg-meta rounded-lg flex items-center justify-center">
+                    <i class="fab fa-facebook text-white"></i>
                   </div>
                 </div>
-                <div class="grid grid-cols-2 gap-4">
-                  <div class="bg-gray-900/50 rounded-lg p-3 text-center">
-                    <p class="text-2xl font-bold text-green-400">+320%</p>
-                    <p class="text-xs text-gray-400">Mais visitas</p>
-                  </div>
-                  <div class="bg-gray-900/50 rounded-lg p-3 text-center">
-                    <p class="text-2xl font-bold text-yellow-400">+15</p>
-                    <p class="text-xs text-gray-400">Clientes/mês</p>
-                  </div>
+                <div class="text-right">
+                  <p class="text-sm text-gray-400">Visibilidade total</p>
+                  <p class="text-lg font-bold gradient-text">Google + Facebook</p>
                 </div>
               </div>
               <img 
                 src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
-                alt="Exemplo de site profissional com Meta Ads"
-                class="w-full h-[300px] object-cover rounded-xl"
+                alt="Exemplo de site profissional para comércio"
+                class="w-full h-[350px] object-cover rounded-xl"
               >
             </div>
           </div>
           <div class="mt-6 p-4 bg-gray-900/50 rounded-xl border border-gray-800">
             <p class="text-center text-gray-400">
-              <i class="fas fa-bullseye text-yellow-500 mr-2"></i>
-              Site + Meta Ads: Combinação perfeita para resultados
+              <i class="fas fa-star text-yellow-500 mr-2"></i>
+              Exemplo de site profissional para comércio local
             </p>
           </div>
         </div>
@@ -431,157 +424,202 @@
     </div>
   </section>
 
-  <!-- NOVA SEÇÃO: Meta Ads Explicado -->
+  <!-- NOVA SEÇÃO: Visibilidade Explicada para Leigos -->
   <section class="py-20 px-6 bg-gradient-to-b from-gray-950 to-gray-900">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16 fade-in">
         <h2 class="text-4xl font-bold">
-          Por que seu negócio <span class="gradient-text">precisa de Meta Ads</span> junto com o site?
+          Como seus clientes vão <span class="gradient-text">encontrar seu negócio</span>
         </h2>
         <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
-          Um site sem tráfego é como uma loja em um beco escuro. Meta Ads coloca seu negócio na avenida principal.
+          Explicação simples para quem não é especialista em marketing digital
         </p>
       </div>
       
-      <div class="grid md:grid-cols-2 gap-12 items-center fade-in">
-        <div>
-          <div class="p-8 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-2xl border border-blue-500/30">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-16 h-16 gradient-bg-meta rounded-xl flex items-center justify-center">
-                <i class="fab fa-facebook text-2xl text-white"></i>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold">Meta Ads Profissional</h3>
-                <p class="text-blue-300">Gestão completa do seu tráfego pago</p>
-              </div>
+      <div class="balanced-container fade-in">
+        <!-- Google -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+              alt="Google Search"
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
+              <i class="fab fa-google text-lg text-gray-950"></i>
             </div>
-            
-            <div class="space-y-6">
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-bullseye text-blue-500"></i>
+          </div>
+          <div class="p-8 symmetric-card-content">
+            <h3 class="text-2xl font-bold mb-4">No Google (Gratuito)</h3>
+            <p class="text-gray-400 mb-6">
+              Seu site otimizado aparece quando alguém na sua cidade pesquisa por:
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-search text-yellow-500 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">Anúncios segmentados</p>
-                  <p class="text-gray-400 text-sm">Mostre seu negócio apenas para pessoas da sua cidade e perfil ideal</p>
+                  <p class="font-medium">"pizzaria perto de mim"</p>
+                  <p class="text-gray-400 text-sm">Se você tem uma pizzaria</p>
                 </div>
               </div>
               
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-dollar-sign text-blue-500"></i>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-search text-yellow-500 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">Custo-benefício superior</p>
-                  <p class="text-gray-400 text-sm">A partir de R$ 10/dia você alcança centenas de potenciais clientes</p>
+                  <p class="font-medium">"encanador [sua cidade]"</p>
+                  <p class="text-gray-400 text-sm">Se você é encanador</p>
                 </div>
               </div>
               
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <i class="fas fa-chart-bar text-blue-500"></i>
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-search text-yellow-500 text-xs"></i>
                 </div>
                 <div>
-                  <p class="font-medium">Resultados mensuráveis</p>
-                  <p class="text-gray-400 text-sm">Veja exatamente quantos clientes cada real investido trouxe</p>
+                  <p class="font-medium">"loja de material de construção"</p>
+                  <p class="text-gray-400 text-sm">Se você tem uma loja</p>
                 </div>
               </div>
             </div>
             
-            <div class="mt-8 p-4 bg-gray-900/50 rounded-lg">
-              <p class="text-center text-blue-300">
-                <i class="fas fa-exclamation-circle mr-2"></i>
-                <strong>Sem Meta Ads</strong> = Site bonito sem visitas. <strong>Com Meta Ads</strong> = Clientes entrando todos os dias
+            <div class="mt-8 p-4 bg-yellow-500/10 rounded-xl border border-yellow-500/20">
+              <p class="text-yellow-400 text-sm">
+                <i class="fas fa-info-circle mr-2"></i>
+                <strong>Como funciona:</strong> Google encontra seu site e mostra para quem busca na região. Quanto melhor otimizado, mais acima aparece.
               </p>
             </div>
           </div>
         </div>
         
-        <div class="fade-in">
-          <h3 class="text-2xl font-bold mb-6">O que você recebe no pacote completo:</h3>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
-              <div class="flex items-center justify-between mb-3">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 gradient-bg-yellow rounded-lg flex items-center justify-center">
-                    <i class="fas fa-globe text-gray-950"></i>
-                  </div>
-                  <span class="font-bold text-lg">Site Profissional</span>
+        <!-- Meta Ads -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+              alt="Facebook e Instagram"
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-meta rounded-xl flex items-center justify-center">
+              <i class="fab fa-facebook text-lg text-white"></i>
+            </div>
+          </div>
+          <div class="p-8 symmetric-card-content">
+            <h3 class="text-2xl font-bold mb-4">Meta Ads (Pago)</h3>
+            <p class="text-gray-400 mb-6">
+              Seu anúncio aparece diretamente para potenciais clientes:
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fab fa-facebook text-blue-500 text-xs"></i>
                 </div>
-                <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm">INCLUSO</span>
+                <div>
+                  <p class="font-medium">No Facebook</p>
+                  <p class="text-gray-400 text-sm">Enquanto navegam no feed de notícias</p>
+                </div>
               </div>
-              <ul class="space-y-2 text-gray-400 pl-14">
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-green-500 text-xs"></i>
-                  Design moderno e responsivo
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-green-500 text-xs"></i>
-                  Otimizado para Google
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-green-500 text-xs"></i>
-                  WhatsApp integrado
-                </li>
-              </ul>
+              
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-pink-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fab fa-instagram text-pink-500 text-xs"></i>
+                </div>
+                <div>
+                  <p class="font-medium">No Instagram</p>
+                  <p class="text-gray-400 text-sm">Entre stories e posts que seguem</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3">
+                <div class="w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-bullseye text-blue-500 text-xs"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Pessoas específicas</p>
+                  <p class="text-gray-400 text-sm">Da sua cidade, idade e interesses</p>
+                </div>
+              </div>
             </div>
             
-            <div class="bg-gray-800/50 p-6 rounded-xl border border-blue-500/30">
-              <div class="flex items-center justify-between mb-3">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 gradient-bg-meta rounded-lg flex items-center justify-center">
-                    <i class="fab fa-facebook text-white"></i>
-                  </div>
-                  <span class="font-bold text-lg">Meta Ads Configurado</span>
-                </div>
-                <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">INCLUSO</span>
-              </div>
-              <ul class="space-y-2 text-gray-400 pl-14">
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-blue-500 text-xs"></i>
-                  Configuração profissional da conta
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-blue-500 text-xs"></i>
-                  Públicos-alvo segmentados
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-blue-500 text-xs"></i>
-                  Relatórios de desempenho
-                </li>
-              </ul>
-            </div>
-            
-            <div class="bg-gray-800/50 p-6 rounded-xl border border-green-500/30">
-              <div class="flex items-center justify-between mb-3">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
-                    <i class="fas fa-gift text-green-500"></i>
-                  </div>
-                  <span class="font-bold text-lg">Bônus Especial</span>
-                </div>
-                <span class="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">GRÁTIS</span>
-              </div>
-              <p class="text-gray-300 pl-14">
-                <i class="fas fa-star text-yellow-500 mr-2"></i>
-                <strong>1 mês de gestão básica de Meta Ads incluída</strong> (valor de R$ 300)
+            <div class="mt-8 p-4 bg-blue-500/10 rounded-xl border border-blue-500/20">
+              <p class="text-blue-400 text-sm">
+                <i class="fas fa-info-circle mr-2"></i>
+                <strong>Como funciona:</strong> Você investe um valor (ex: R$ 300/mês) e seu anúncio aparece para milhares de pessoas na região. Quem clica, vai direto para seu site/WhatsApp.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      
+      <!-- Comparação simples -->
+      <div class="mt-16 fade-in">
+        <div class="bg-gray-800/30 rounded-2xl p-8 border border-gray-700">
+          <h3 class="text-2xl font-bold text-center mb-8">
+            <span class="gradient-text">Google vs Meta Ads:</span> Qual a diferença?
+          </h3>
           
-          <div class="mt-8 p-6 bg-gradient-to-r from-yellow-500/10 to-yellow-600/10 rounded-xl border border-yellow-500/30">
-            <div class="flex items-center justify-between">
-              <div>
-                <p class="font-bold text-lg">Investimento Total</p>
-                <p class="text-3xl font-bold gradient-text">R$ 1.497</p>
-                <p class="text-gray-400 text-sm">ou 12x de R$ 147,90</p>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fab fa-google text-2xl text-gray-950"></i>
               </div>
-              <div class="text-right">
-                <p class="text-sm text-gray-400 line-through">De: R$ 1.997</p>
-                <p class="text-green-400 font-bold">Economize R$ 500</p>
-              </div>
+              <h4 class="text-xl font-bold mb-3">Google (Orgânico)</h4>
+              <ul class="space-y-3 text-gray-400 text-left">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-green-500 mt-1"></i>
+                  <span><strong>Gratuito</strong> (depois do site pronto)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-green-500 mt-1"></i>
+                  <span>Pessoas que <strong>já estão procurando</strong> seu serviço</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-green-500 mt-1"></i>
+                  <span>Resultados crescem com o tempo</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-clock text-yellow-500 mt-1"></i>
+                  <span>Pode levar algumas semanas para aparecer bem</span>
+                </li>
+              </ul>
             </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 gradient-bg-meta rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fab fa-facebook text-2xl text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold mb-3">Meta Ads (Pago)</h4>
+              <ul class="space-y-3 text-gray-400 text-left">
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-dollar-sign text-blue-500 mt-1"></i>
+                  <span>Requer <strong>investimento mensal</strong> (a partir de R$ 300)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-green-500 mt-1"></i>
+                  <span>Alcance <strong>imediato</strong> desde o primeiro dia</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-green-500 mt-1"></i>
+                  <span>Mostra para quem <strong>nunca ouviu falar</strong> do seu negócio</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fas fa-check text-green-500 mt-1"></i>
+                  <span>Controle total sobre quem vê seu anúncio</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="mt-8 p-6 elegant-gradient rounded-xl border border-yellow-500/20">
+            <p class="text-center text-lg">
+              <span class="text-yellow-500 font-bold">Dica profissional:</span> 
+              Comece com um site otimizado para Google (gratuito) e depois, se quiser resultados mais rápidos, adicione Meta Ads.
+            </p>
           </div>
         </div>
       </div>
@@ -593,15 +631,16 @@
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16 fade-in">
         <h2 class="text-4xl font-bold">
-          Ilumine seu negócio com <span class="gradient-text">site + tráfego pago</span>
+          Ilumine seu negócio com um site que <span class="gradient-text">converte</span>
         </h2>
         <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-lg">
-          A combinação perfeita para transformar cliques em clientes
+          Veja como um site profissional transforma a maneira como seus clientes encontram e confiam no seu negócio
         </p>
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+        <!-- Card 1 - Mantido original -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
           <div class="h-48 overflow-hidden relative">
             <img 
               src="https://plus.unsplash.com/premium_photo-1758601566644-13ad730a3fe5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
@@ -613,7 +652,7 @@
               <i class="fas fa-tachometer-alt text-lg text-gray-950"></i>
             </div>
           </div>
-          <div class="p-6">
+          <div class="p-6 symmetric-card-content">
             <h3 class="text-xl font-bold mb-3">Velocidade que impressiona</h3>
             <p class="text-gray-400 mb-4">
               Sites que carregam instantaneamente no celular. 
@@ -626,7 +665,34 @@
           </div>
         </div>
         
-        <div class="bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+        <!-- Card 2 - WhatsApp integrado -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1762330469727-156f5369e4f9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="WhatsApp integrado"
+              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+            <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
+              <i class="fab fa-whatsapp text-lg text-gray-950"></i>
+            </div>
+          </div>
+          <div class="p-6 symmetric-card-content">
+            <h3 class="text-xl font-bold mb-3">WhatsApp Integrado</h3>
+            <p class="text-gray-400 mb-4">
+              Cliente vê seu produto e já clica para falar com você. 
+              <span class="text-yellow-500 font-medium">Conversão direta</span> sem barreiras.
+            </p>
+            <div class="flex items-center text-sm text-gray-500">
+              <i class="fas fa-comment text-yellow-500 mr-2"></i>
+              Atendimento direto do seu site
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 - NOVO: Meta Ads opcional -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
           <div class="h-48 overflow-hidden relative">
             <img 
               src="https://images.unsplash.com/photo-1633113090205-cc1ac795b5f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
@@ -638,167 +704,154 @@
               <i class="fab fa-facebook text-lg text-white"></i>
             </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">Meta Ads Profissional</h3>
+          <div class="p-6 symmetric-card-content">
+            <h3 class="text-xl font-bold mb-3">+ Meta Ads (Opcional)</h3>
             <p class="text-gray-400 mb-4">
-              Anúncios segmentados que mostram seu negócio para quem realmente importa.
-              <span class="text-blue-400 font-medium">Clientes qualificados direto no WhatsApp</span>.
+              Quer resultados mais rápidos? Ofereço <span class="text-blue-400 font-medium">gestão profissional de anúncios</span> no Facebook e Instagram.
             </p>
             <div class="flex items-center text-sm text-gray-500">
               <i class="fas fa-bullseye text-blue-400 mr-2"></i>
-              Segmentação por localização e interesse
-            </div>
-          </div>
-        </div>
-        
-        <div class="bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
-          <div class="h-48 overflow-hidden relative">
-            <img 
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
-              alt="SEO e Google"
-              class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-            >
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
-            <div class="absolute top-4 left-4 w-12 h-12 gradient-bg-yellow rounded-xl flex items-center justify-center">
-              <i class="fas fa-search text-lg text-gray-950"></i>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">Otimizado para o Google</h3>
-            <p class="text-gray-400 mb-4">
-              Apareça nas buscas locais. Quando alguém procura seu serviço na região, 
-              <span class="text-yellow-500 font-medium">seu site aparece primeiro</span>.
-            </p>
-            <div class="flex items-center text-sm text-gray-500">
-              <i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i>
-              Visibilidade local aumentada
+              Serviço adicional - investimento mensal
             </div>
           </div>
         </div>
       </div>
       
-      <!-- NOVAS ESTATÍSTICAS com Meta Ads -->
+      <!-- Estatísticas para criar credibilidade -->
       <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center fade-in">
         <div class="p-6 bg-gray-800/30 rounded-xl">
-          <div class="text-4xl font-bold gradient-text">+320%</div>
-          <div class="text-gray-400 mt-2">Mais tráfego com Meta Ads</div>
+          <div class="text-4xl font-bold gradient-text">100%</div>
+          <div class="text-gray-400 mt-2">Focado em resultado</div>
         </div>
         <div class="p-6 bg-gray-800/30 rounded-xl">
-          <div class="text-4xl font-bold gradient-text">15-30</div>
-          <div class="text-gray-400 mt-2">Clientes novos por mês*</div>
+          <div class="text-4xl font-bold gradient-text">+50</div>
+          <div class="text-gray-400 mt-2">Sites entregues</div>
         </div>
         <div class="p-6 bg-gray-800/30 rounded-xl">
-          <div class="text-4xl font-bold gradient-text">7 dias</div>
-          <div class="text-gray-400 mt-2">Site no ar</div>
+          <div class="text-4xl font-bold gradient-text">24h</div>
+          <div class="text-gray-400 mt-2">Suporte rápido</div>
         </div>
         <div class="p-6 bg-gray-800/30 rounded-xl">
-          <div class="text-4xl font-bold gradient-text">R$10/dia</div>
-          <div class="text-gray-400 mt-2">Investimento mínimo em ads</div>
+          <div class="text-4xl font-bold gradient-text">0</div>
+          <div class="text-gray-400 mt-2">Mensalidade</div>
         </div>
       </div>
-      
-      <p class="text-center text-gray-500 text-sm mt-6">*Resultado médio com investimento de R$ 300/mês em Meta Ads</p>
     </div>
   </section>
 
-  <!-- ANTES E DEPOIS -->
+  <!-- ANTES E DEPOIS - Versão refinada -->
   <section class="py-20 px-6 bg-gradient-to-b from-gray-900 to-gray-950">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16 fade-in">
         <h2 class="text-4xl font-bold">Transformação real para comércios locais</h2>
         <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-          Veja a diferença que um site + Meta Ads faz para negócios como o seu
+          Veja a diferença que um site profissional faz para negócios como o seu
         </p>
       </div>
       
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="balanced-container">
         <div class="fade-in">
-          <h3 class="text-2xl font-bold mb-6 flex items-center">
-            <i class="fas fa-times-circle text-red-500 mr-3"></i>
-            Sem site + Meta Ads = Estagnação
-          </h3>
-          <div class="space-y-4">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <i class="fas fa-eye-slash text-red-500"></i>
+          <div class="bg-gray-800/50 rounded-2xl p-8 h-full">
+            <h3 class="text-2xl font-bold mb-6 flex items-center">
+              <i class="fas fa-times-circle text-gray-400 mr-3"></i>
+              Sem site = Clientes perdidos
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-eye-slash text-gray-400"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Invisível no Google</p>
+                  <p class="text-gray-400 text-sm">Quando procuram seu serviço, encontram só seus concorrentes</p>
+                </div>
               </div>
-              <div>
-                <p class="font-medium">Invisível no digital</p>
-                <p class="text-gray-400 text-sm">Clientes não te encontram online, vão para concorrentes</p>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-thumbs-down text-gray-400"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Dependência de redes sociais</p>
+                  <p class="text-gray-400 text-sm">Algoritmos mudam e seu alcance cai do dia para a noite</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-user-slash text-gray-400"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Imagem pouco profissional</p>
+                  <p class="text-gray-400 text-sm">WhatsApp ou Instagram não passam a mesma credibilidade</p>
+                </div>
               </div>
             </div>
             
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <i class="fas fa-chart-line-down text-red-500"></i>
-              </div>
-              <div>
-                <p class="font-medium">Vendas oscilantes</p>
-                <p class="text-gray-400 text-sm">Dependendo apenas de indicações e sorte</p>
-              </div>
+            <div class="mt-8 p-6 bg-gray-700/30 rounded-xl border border-gray-600">
+              <p class="text-gray-400">
+                <i class="fas fa-exclamation-circle mr-2"></i>
+                <strong>Resultado:</strong> Menos clientes, mais dependência do boca a boca
+              </p>
             </div>
-            
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <i class="fas fa-user-slash text-red-500"></i>
-              </div>
-              <div>
-                <p class="font-medium">Crescimento limitado</p>
-                <p class="text-gray-400 text-sm">Não atrai novos clientes, só os de sempre</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="mt-8 p-6 bg-gradient-to-r from-red-500/10 to-red-600/10 rounded-xl border border-red-500/30">
-            <p class="text-red-400">
-              <i class="fas fa-exclamation-triangle mr-2"></i>
-              <strong>Resultado:</strong> Negócio travado, sem perspectiva de crescimento real
-            </p>
           </div>
         </div>
         
         <div class="fade-in">
-          <h3 class="text-2xl font-bold mb-6 flex items-center">
-            <i class="fas fa-check-circle text-green-500 mr-3"></i>
-            Com site + Meta Ads = Negócio escalável
-          </h3>
-          <div class="space-y-4">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <i class="fas fa-eye text-green-500"></i>
+          <div class="bg-gray-800/50 rounded-2xl p-8 h-full border border-yellow-500/30">
+            <h3 class="text-2xl font-bold mb-6 flex items-center">
+              <i class="fas fa-check-circle text-yellow-500 mr-3"></i>
+              Com site = Negócio escalável
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-eye text-yellow-500"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Visibilidade 24/7</p>
+                  <p class="text-gray-400 text-sm">Seu negócio aberto na internet, mesmo quando a loja fecha</p>
+                </div>
               </div>
-              <div>
-                <p class="font-medium">Visibilidade 24/7 + Tráfego</p>
-                <p class="text-gray-400 text-sm">Seu negócio aberto e com anúncios ativos sempre</p>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-thumbs-up text-yellow-500"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Credibilidade instantânea</p>
+                  <p class="text-gray-400 text-sm">Site profissional passa confiança antes mesmo do primeiro contato</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fas fa-user-plus text-yellow-500"></i>
+                </div>
+                <div>
+                  <p class="font-medium">Novos clientes direto do Google</p>
+                  <p class="text-gray-400 text-sm">Gente que você nunca alcançaria agora encontra seu negócio</p>
+                </div>
+              </div>
+              
+              <!-- Adicionado opção de Meta Ads -->
+              <div class="flex items-start gap-4 mt-6 pt-6 border-t border-gray-700">
+                <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <i class="fab fa-facebook text-blue-500"></i>
+                </div>
+                <div>
+                  <p class="font-medium">+ Meta Ads (Opcional)</p>
+                  <p class="text-gray-400 text-sm">Para quem quer resultados ainda mais rápidos</p>
+                </div>
               </div>
             </div>
             
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <i class="fas fa-chart-line text-green-500"></i>
-              </div>
-              <div>
-                <p class="font-medium">Vendas previsíveis</p>
-                <p class="text-gray-400 text-sm">X investido em ads = Y clientes no WhatsApp</p>
-              </div>
+            <div class="mt-8 p-6 bg-yellow-500/10 rounded-xl border border-yellow-500/30">
+              <p class="text-yellow-400">
+                <i class="fas fa-chart-line mr-2"></i>
+                <strong>Resultado:</strong> Mais clientes, menos custo de aquisição, negócio valorizado
+              </p>
             </div>
-            
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <i class="fas fa-user-plus text-green-500"></i>
-              </div>
-              <div>
-                <p class="font-medium">Crescimento consistente</p>
-                <p class="text-gray-400 text-sm">Novos clientes todos os dias, todos os meses</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="mt-8 p-6 bg-gradient-to-r from-green-500/10 to-yellow-500/10 rounded-xl border border-green-500/30">
-            <p class="text-green-400">
-              <i class="fas fa-chart-line mr-2"></i>
-              <strong>Resultado:</strong> Negócio que escala, lucro que cresce, futuro garantido
-            </p>
           </div>
         </div>
       </div>
@@ -813,10 +866,10 @@
           >
           <div class="absolute inset-0 bg-gradient-to-t from-gray-950 to-transparent flex items-end p-8">
             <div>
-              <p class="text-2xl font-bold">"Com site + Meta Ads da LumenStudio, faturei R$ 12.000 a mais em 2 meses"</p>
+              <p class="text-2xl font-bold">"Com o site da LumenStudio, minhas vendas aumentaram 40% em 3 meses"</p>
               <p class="text-gray-300 mt-2 flex items-center">
                 <i class="fas fa-user-circle text-yellow-500 mr-2"></i>
-                Maria, dona de confeitaria local
+                João, dono de marmitaria local
               </p>
             </div>
           </div>
@@ -825,96 +878,145 @@
     </div>
   </section>
 
-  <!-- PROCESSO COM IMAGENS - Atualizado para incluir Meta Ads -->
+  <!-- PACOTES DE SERVIÇOS - Simétricos e elegantes -->
   <section class="py-20 px-6 bg-gray-900">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16 fade-in">
-        <h2 class="text-4xl font-bold">Simples, rápido e sem complicação</h2>
+        <h2 class="text-4xl font-bold">Escolha o plano ideal para seu negócio</h2>
         <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
-          Em uma semana seu site está no ar e os anúncios começam a trazer clientes
+          Do site básico ao completo com gestão de tráfego
         </p>
       </div>
       
-      <div class="grid md:grid-cols-5 gap-8">
-        <div class="text-center fade-in">
-          <div class="relative mb-6">
-            <div class="w-20 h-20 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto">
-              <i class="fas fa-comments text-xl text-gray-950"></i>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Plano Site Básico -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in">
+          <div class="p-8 symmetric-card-content">
+            <div class="text-center mb-8">
+              <div class="w-16 h-16 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-globe text-2xl text-gray-950"></i>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Site Profissional</h3>
+              <p class="text-gray-400">Perfeito para começar no digital</p>
             </div>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-              <span class="font-bold text-gray-950 text-sm">1</span>
+            
+            <div class="mb-8">
+              <div class="text-center">
+                <span class="text-4xl font-bold gradient-text">R$ 997</span>
+                <p class="text-gray-400">ou 12x de R$ 98,70</p>
+              </div>
             </div>
+            
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>Site otimizado para <strong>Google</strong></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>Design responsivo (celular e computador)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>WhatsApp integrado</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>Pronto em 7 dias úteis</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>Hospedagem grátis por 1 ano</span>
+              </li>
+            </ul>
           </div>
-          <h3 class="text-lg font-bold mb-3">Conversa Inicial</h3>
-          <p class="text-gray-400 text-sm">
-            Analisamos seu negócio e objetivos
-          </p>
+          
+          <div class="p-8 pt-0">
+            <button onclick="chamarWhats('Site Profissional - R$ 997')" 
+              class="w-full yellow-button px-6 py-4 rounded-xl font-bold transition-all duration-300">
+              QUERO APENAS O SITE
+            </button>
+          </div>
         </div>
         
-        <div class="text-center fade-in">
-          <div class="relative mb-6">
-            <div class="w-20 h-20 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto">
-              <i class="fas fa-file-contract text-xl text-gray-950"></i>
-            </div>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-              <span class="font-bold text-gray-950 text-sm">2</span>
-            </div>
+        <!-- Plano Site + Meta Ads -->
+        <div class="symmetric-card bg-gray-800/50 rounded-2xl overflow-hidden card-hover fade-in border border-yellow-500/30">
+          <div class="absolute top-4 right-4">
+            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-medium">
+              MAIS POPULAR
+            </span>
           </div>
-          <h3 class="text-lg font-bold mb-3">Proposta</h3>
-          <p class="text-gray-400 text-sm">
-            Site + Meta Ads com orçamento claro
-          </p>
-        </div>
-        
-        <div class="text-center fade-in">
-          <div class="relative mb-6">
-            <div class="w-20 h-20 gradient-bg-yellow rounded-full flex items-center justify-center mx-auto">
-              <i class="fas fa-code text-xl text-gray-950"></i>
+          
+          <div class="p-8 symmetric-card-content">
+            <div class="text-center mb-8">
+              <div class="w-16 h-16 elegant-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                <div class="flex items-center gap-1">
+                  <i class="fab fa-google text-yellow-500"></i>
+                  <i class="fab fa-facebook text-blue-500"></i>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Site + Meta Ads</h3>
+              <p class="text-gray-400">Para quem quer resultados rápidos</p>
             </div>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-              <span class="font-bold text-gray-950 text-sm">3</span>
+            
+            <div class="mb-8">
+              <div class="text-center">
+                <span class="text-4xl font-bold gradient-text">R$ 1.497</span>
+                <p class="text-gray-400">ou 12x de R$ 147,90</p>
+                <p class="text-green-400 text-sm mt-1">
+                  <i class="fas fa-gift mr-1"></i>
+                  Economize R$ 300
+                </p>
+              </div>
             </div>
+            
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span><strong>Tudo do plano Site Profissional</strong></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>+ <strong>Configuração inicial de Meta Ads</strong></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>Públicos-alvo definidos para sua cidade</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>1 mês de <strong>gestão básica</strong> incluída*</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check text-green-500 mt-1"></i>
+                <span>Relatório de desempenho mensal</span>
+              </li>
+            </ul>
+            
+            <p class="text-gray-500 text-sm mb-4">
+              *Após o primeiro mês, gestão profissional por R$ 300/mês (opcional)
+            </p>
           </div>
-          <h3 class="text-lg font-bold mb-3">Site no Ar</h3>
-          <p class="text-gray-400 text-sm">
-            Seu site profissional pronto em 7 dias
-          </p>
-        </div>
-        
-        <div class="text-center fade-in">
-          <div class="relative mb-6">
-            <div class="w-20 h-20 gradient-bg-meta rounded-full flex items-center justify-center mx-auto">
-              <i class="fab fa-facebook text-xl text-white"></i>
-            </div>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-              <span class="font-bold text-gray-950 text-sm">4</span>
-            </div>
+          
+          <div class="p-8 pt-0">
+            <button onclick="chamarWhats('Site + Meta Ads - R$ 1.497')" 
+              class="w-full whatsapp-button px-6 py-4 rounded-xl font-bold text-white transition-all duration-300">
+              QUERO SITE + META ADS
+            </button>
           </div>
-          <h3 class="text-lg font-bold mb-3">Meta Ads</h3>
-          <p class="text-gray-400 text-sm">
-            Configuração profissional dos anúncios
-          </p>
         </div>
-        
-        <div class="text-center fade-in">
-          <div class="relative mb-6">
-            <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
-              <i class="fas fa-user-check text-xl text-green-500"></i>
-            </div>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center border-4 border-gray-900">
-              <span class="font-bold text-gray-950 text-sm">5</span>
-            </div>
-          </div>
-          <h3 class="text-lg font-bold mb-3">Clientes Chegando</h3>
-          <p class="text-gray-400 text-sm">
-            WhatsApp tocando com clientes novos
-          </p>
-        </div>
+      </div>
+      
+      <div class="mt-12 text-center fade-in">
+        <p class="text-gray-400">
+          <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
+          Dúvidas sobre qual plano escolher? Fale comigo no WhatsApp!
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- CTA FINAL COM IMAGEM DE FUNDO - URGENTE -->
+  <!-- CTA FINAL ELEGANTE -->
   <section class="py-20 px-6 relative overflow-hidden">
     <!-- Imagem de fundo -->
     <div class="absolute inset-0">
@@ -928,56 +1030,43 @@
     
     <div class="max-w-4xl mx-auto relative z-10 text-center">
       <h2 class="text-4xl md:text-5xl font-bold">
-        Pare de perder clientes para seus concorrentes
+        Seu próximo cliente está esperando
       </h2>
       
       <p class="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-        Enquanto você hesita, outros comerciantes já estão faturando mais com site + Meta Ads.
+        Enquanto você adia, seu concorrente já está fechando vendas pelo site dele.
       </p>
       
-      <!-- Destaque visual URGENTE -->
-      <div class="mt-10 p-8 bg-gradient-to-r from-red-500/20 to-red-600/20 backdrop-blur-sm rounded-2xl border border-red-500/30 max-w-2xl mx-auto urgent-pulse">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Destaque visual elegante -->
+      <div class="mt-10 p-8 elegant-gradient backdrop-blur-sm rounded-2xl border border-yellow-500/30 max-w-lg mx-auto">
+        <div class="flex items-center justify-center gap-4 mb-4">
+          <div class="w-12 h-12 gradient-bg-yellow rounded-full flex items-center justify-center">
+            <i class="fas fa-gift text-xl text-gray-950"></i>
+          </div>
           <div class="text-left">
-            <div class="flex items-center gap-3 mb-2">
-              <div class="countdown-timer w-12 h-12 rounded-full flex items-center justify-center">
-                <i class="fas fa-clock text-white"></i>
-              </div>
-              <div>
-                <p class="font-bold text-lg text-white">Oferta expira em:</p>
-                <p class="text-2xl font-bold text-red-300" id="final-countdown">15:00</p>
-              </div>
-            </div>
-            <p class="text-red-300 text-sm">
-              <i class="fas fa-exclamation-circle mr-2"></i>
-              Preço especial com 1 mês GRÁTIS de gestão de Meta Ads
-            </p>
+            <p class="font-bold text-lg">Oferta por tempo limitado</p>
+            <p class="text-yellow-400">Configuração de Meta Ads gratuita</p>
           </div>
-          
-          <div class="text-center">
-            <p class="text-gray-300 text-sm">Vagas restantes:</p>
-            <div class="flex items-center justify-center gap-2 mt-2">
-              <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                <span class="font-bold text-white" id="final-vagas">3</span>
-              </div>
-              <span class="text-red-300 font-medium">de 5 vagas</span>
-            </div>
-          </div>
-          
-          <div class="text-right">
-            <p class="text-gray-400 text-sm line-through">De: R$ 1.997</p>
-            <p class="text-3xl font-bold gradient-text">R$ 1.497</p>
-            <p class="text-green-400 text-sm font-medium">Economize R$ 500</p>
-          </div>
+        </div>
+        <div class="mt-4 flex items-center justify-center gap-2 text-yellow-400">
+          <i class="fas fa-users"></i>
+          <span>Apenas 3 vagas disponíveis este mês</span>
         </div>
       </div>
       
-      <button onclick="chamarWhats()" 
-        class="mt-10 whatsapp-button text-white px-14 py-5 rounded-xl text-xl font-bold transition-all duration-300 shadow-2xl flex items-center justify-center gap-4 mx-auto w-full max-w-md">
-        <i class="fab fa-whatsapp"></i>
-        QUERO SITE + META ADS AGORA
-        <i class="fas fa-bolt"></i>
-      </button>
+      <div class="mt-10 grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <button onclick="chamarWhats('Site Profissional - R$ 997')" 
+          class="yellow-button px-8 py-5 rounded-xl text-lg font-bold transition-all duration-300">
+          SITE PROFISSIONAL
+          <p class="text-sm font-normal mt-1">R$ 997</p>
+        </button>
+        
+        <button onclick="chamarWhats('Site + Meta Ads - R$ 1.497')" 
+          class="whatsapp-button text-white px-8 py-5 rounded-xl text-lg font-bold transition-all duration-300">
+          SITE + META ADS
+          <p class="text-sm font-normal mt-1">R$ 1.497</p>
+        </button>
+      </div>
       
       <div class="mt-8 flex flex-col md:flex-row justify-center items-center gap-6 text-sm">
         <div class="flex items-center gap-3">
@@ -988,21 +1077,15 @@
         </div>
         <div class="flex items-center gap-3">
           <div class="w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center">
-            <i class="fas fa-user-check text-yellow-500"></i>
+            <i class="fas fa-user-clock text-yellow-500"></i>
           </div>
-          <span class="text-gray-300">Atendimento em 15min</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <div class="w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center">
-            <i class="fas fa-gift text-yellow-500"></i>
-          </div>
-          <span class="text-gray-300">1 mês grátis de Meta Ads</span>
+          <span class="text-gray-300">Atendimento em menos de 15min</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RODAPÉ atualizado -->
+  <!-- RODAPÉ -->
   <footer class="py-12 px-6 bg-gray-950 text-center border-t border-gray-800">
     <div class="max-w-6xl mx-auto">
       <div class="grid md:grid-cols-3 gap-8">
@@ -1016,18 +1099,18 @@
                 <span class="font-bold text-yellow-400">LUMEN</span>
                 <span class="font-light text-yellow-500">STUDIO</span>
               </div>
-              <div class="text-gray-500 text-sm">Sites + Meta Ads que iluminam seu negócio</div>
+              <div class="text-gray-500 text-sm">Sites que iluminam seu negócio</div>
             </div>
           </div>
           <p class="text-gray-400 text-sm">
-            Especializados em criar sites rápidos e gestão de Meta Ads para pequenos e médios negócios locais.
+            Especializados em criar sites rápidos, leves e eficientes para pequenos e médios negócios locais.
           </p>
-          <div class="mt-4 flex items-center gap-4">
-            <div class="px-3 py-1 bg-yellow-500/10 rounded-lg border border-yellow-500/20 text-xs flex items-center gap-2">
+          <div class="mt-4 flex items-center gap-3">
+            <div class="px-3 py-1 bg-yellow-500/10 rounded-lg text-xs flex items-center gap-2">
               <i class="fab fa-google text-yellow-500"></i>
               Google
             </div>
-            <div class="px-3 py-1 bg-blue-500/10 rounded-lg border border-blue-500/20 text-xs flex items-center gap-2">
+            <div class="px-3 py-1 bg-blue-500/10 rounded-lg text-xs flex items-center gap-2">
               <i class="fab fa-facebook text-blue-500"></i>
               Meta Ads
             </div>
@@ -1035,49 +1118,45 @@
         </div>
         
         <div class="text-left">
-          <h4 class="font-bold text-lg mb-4 text-yellow-500">Serviços Completos</h4>
+          <h4 class="font-bold text-lg mb-4 text-yellow-500">Serviços</h4>
           <ul class="space-y-2 text-gray-400">
             <li class="flex items-center gap-2">
-              <i class="fas fa-globe text-yellow-500 text-sm"></i>
-              Site Profissional
+              <i class="fas fa-utensils text-yellow-500 text-sm"></i>
+              Sites para Restaurantes
             </li>
             <li class="flex items-center gap-2">
-              <i class="fab fa-facebook text-blue-500 text-sm"></i>
-              Meta Ads Configurado
+              <i class="fas fa-store text-yellow-500 text-sm"></i>
+              Sites para Lojas
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-search text-yellow-500 text-sm"></i>
-              Otimização para Google
+              <i class="fas fa-tools text-yellow-500 text-sm"></i>
+              Sites para Prestadores de Serviço
             </li>
             <li class="flex items-center gap-2">
-              <i class="fas fa-chart-line text-green-500 text-sm"></i>
-              Gestão de Tráfego Pago
+              <i class="fas fa-user-tie text-yellow-500 text-sm"></i>
+              Sites para Profissionais
             </li>
           </ul>
         </div>
         
         <div class="text-left">
-          <h4 class="font-bold text-lg mb-4 text-yellow-500">Contato Rápido</h4>
-          <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-6 py-3 rounded-lg font-medium transition flex items-center gap-3 mb-4 w-full">
+          <h4 class="font-bold text-lg mb-4 text-yellow-500">Contato</h4>
+          <button onclick="chamarWhats()" class="whatsapp-button hover:opacity-90 px-6 py-3 rounded-lg font-medium transition flex items-center gap-3 mb-4">
             <i class="fab fa-whatsapp"></i>
             Falar no WhatsApp
           </button>
           <p class="text-gray-400 text-sm">
-            <i class="fas fa-bolt text-yellow-500 mr-2"></i>
+            <i class="fas fa-clock text-yellow-500 mr-2"></i>
             Atendimento rápido e direto<br>
-            Respostas em menos de 15 minutos
-          </p>
-          <p class="text-gray-500 text-xs mt-4">
-            <i class="fas fa-info-circle mr-2"></i>
-            Investimento em Meta Ads não incluso no pacote inicial
+            Segunda a Sexta, 9h às 18h
           </p>
         </div>
       </div>
       
       <div class="mt-10 pt-8 border-t border-gray-800 text-gray-500 text-sm">
-        <p>© 2025 LumenStudio - Sites + Gestão de Meta Ads para Comércios Locais</p>
-        <p class="mt-2 text-xs text-gray-600">Desenvolvido por Rafael Garcia - Transformando cliques em clientes.</p>
-        <p class="mt-2 text-xs text-gray-600">Vanilla com Html-5 + Tailwind Css + JavaScript.</p>
+        <p>© 2025 LumenStudio - Site Desenvolvido por Rafael Garcia</p>
+        <p class="mt-2 text-xs text-gray-600">Iluminando negócios locais, com um site de cada vez.</p>
+        <p class="mt-2 text-xs text-gray-600"> Vanilla com Html-5 + Tailwind Css + JavaScript.</p>
       </div>
     </div>
   </footer>
@@ -1093,65 +1172,19 @@
 
   <script>
     // JavaScript otimizado
-    function chamarWhats() {
+    function chamarWhats(plano = '') {
       const numero = "5524981356706"; 
-      const mensagem = encodeURIComponent(
-        "Olá LumenStudio! Vi seu site e quero saber mais sobre o pacote Site + Meta Ads. Pode me ajudar?"
-      );
+      let mensagem = "Olá LumenStudio! Vi seu site e quero um site profissional para meu comércio. Pode me ajudar?";
+      
+      if (plano) {
+        mensagem = encodeURIComponent(
+          `Olá LumenStudio! Vi seu site e quero saber mais sobre o plano: ${plano}. Pode me ajudar?`
+        );
+      } else {
+        mensagem = encodeURIComponent(mensagem);
+      }
       
       window.open(`https://wa.me/${numero}?text=${mensagem}`, "_blank");
-    }
-    
-    // Contador regressivo URGENTE
-    function startUrgentCountdown() {
-      let minutes = 15;
-      let seconds = 0;
-      let vagas = 3;
-      
-      const countdownElement = document.getElementById('countdown');
-      const finalCountdownElement = document.getElementById('final-countdown');
-      const vagasElement = document.getElementById('vagas-count');
-      const finalVagasElement = document.getElementById('final-vagas');
-      
-      if (!countdownElement) return;
-      
-      const interval = setInterval(() => {
-        // Atualizar contador
-        if (seconds === 0) {
-          if (minutes === 0) {
-            clearInterval(interval);
-            countdownElement.textContent = "00:00";
-            if (finalCountdownElement) finalCountdownElement.textContent = "00:00";
-            return;
-          }
-          minutes--;
-          seconds = 59;
-        } else {
-          seconds--;
-        }
-        
-        // Formatar tempo
-        const timeStr = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        countdownElement.textContent = timeStr;
-        if (finalCountdownElement) finalCountdownElement.textContent = timeStr;
-        
-        // Diminuir vagas periodicamente
-        if (minutes === 12 && seconds === 0 && vagas > 2) {
-          vagas = 2;
-          updateVagasCount();
-        } else if (minutes === 8 && seconds === 0 && vagas > 1) {
-          vagas = 1;
-          updateVagasCount();
-        } else if (minutes === 4 && seconds === 0 && vagas > 0) {
-          vagas = 0;
-          updateVagasCount();
-        }
-      }, 1000);
-      
-      function updateVagasCount() {
-        vagasElement.textContent = vagas;
-        if (finalVagasElement) finalVagasElement.textContent = vagas;
-      }
     }
     
     // Scroll animations
@@ -1196,7 +1229,6 @@
     document.addEventListener('DOMContentLoaded', function() {
       // Iniciar animações
       handleScrollAnimations();
-      startUrgentCountdown();
       
       // Configurar eventos de scroll
       window.addEventListener('scroll', () => {
@@ -1214,7 +1246,17 @@
       
       // Adicionar evento para todos os botões de WhatsApp
       document.querySelectorAll('button[onclick*="chamarWhats"]').forEach(button => {
-        button.addEventListener('click', chamarWhats);
+        // Manter o onclick original se existir
+        if (!button.getAttribute('data-listener-added')) {
+          button.setAttribute('data-listener-added', 'true');
+          const originalOnClick = button.getAttribute('onclick');
+          button.addEventListener('click', function(e) {
+            if (originalOnClick) {
+              // Executar o onclick original
+              eval(originalOnClick);
+            }
+          });
+        }
       });
     });
   </script>
